@@ -1,3 +1,4 @@
+<h1>Przemek Madejczyk 2ti 20</h1>
 <?php
 require_once('log.php');
 $sql = "SELECT * from pracownicy";
