@@ -1,4 +1,5 @@
 <?php
+require_once('log.php');
 $sql = "SELECT * from pracownicy";
 $result = $conn->query($sql);
         echo("<h3>Tabela Pracowników</h3>");
