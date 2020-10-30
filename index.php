@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
 $ sql = "select * from pracownicy where imie not like '%a'" ;
 $ wynik = $ conn -> query( $ sql );
         echo ( „<h3> Tabela Pracowników </h3>” );
-        echo ( "<obramowanie tabeli = 1>" );
+        echo ( "<table border= 1>" );
         echo ( "<th> id </th>" );
         echo ( "<th> imie </th>" );
         echo ( "<th> dzial </th>" );
