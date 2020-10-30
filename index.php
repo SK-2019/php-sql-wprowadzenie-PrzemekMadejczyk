@@ -1,3 +1,4 @@
+<h1> Przemek Madejczyk 20 2ti</h1>
 <?php
 $conn =new mysqli ("127.0.0.1", "root", "","nauka" );
    $result=$conn ->query ('SELECT * from pracownicy');
@@ -33,3 +34,4 @@ $conn =new mysqli ("127.0.0.1", "root", "","nauka" );
 	   }
 	   echo ("</table>");
 ?>
+
