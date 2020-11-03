@@ -10,3 +10,6 @@ table {
 table {
   border-collapse: collapse;
 }
+td {
+  text-align: center;
+}
