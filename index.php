@@ -28,7 +28,7 @@ if ($result->num_rows > 0) {
 } else {
   echo "0 results";
 }
-echo(<h1>"SELECT * from pracownicy where imie not like '%a'"</h1>)
+echo(<h1>"SELECT * from pracownicy where imie not like %a"</h1>)
 $sql = "SELECT * from pracownicy where imie not like'%a'";
 $result = $conn->query($sql);
         echo("<h3>zadanie 2</h3>");
@@ -50,7 +50,7 @@ if ($result->num_rows > 0) {
   echo "0 results";
 }
 
-echo(<h1>"SELECT * from pracownicy where imie like '%a'"</h1>)
+echo(<h1>"SELECT * from pracownicy where imie like %a"</h1>)
 $sql = "SELECT * from pracownicy where imie like '%a'";
 $result = $conn->query($sql);
         echo("<h3>zadanie 3 </h3>");
