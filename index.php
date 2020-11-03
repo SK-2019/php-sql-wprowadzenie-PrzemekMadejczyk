@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 <h1>Przemek Madejczyk 2ti 20</h1>
 <?php
 require_once('log.php');
