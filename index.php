@@ -6,11 +6,11 @@
 <body>
 <h1>Przemek Madejczyk 2ti 20</h1>
 <?php
-require_once('log.php');
-        echo(<h1>"SELECT * from pracownicy"</h1>)
+require_once('log.php
 $sql = "SELECT * from pracownicy";
 $result = $conn->query($sql);
         echo("<h3>zadanie 1</h3>");
+        echo(<h3>$sql</h3>);
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
