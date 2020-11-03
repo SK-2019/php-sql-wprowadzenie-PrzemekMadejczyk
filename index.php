@@ -10,7 +10,7 @@ require_once('log.php');
 $sql = "SELECT * from pracownicy";
 $result = $conn->query($sql);
         echo("<h3>zadanie 1</h3>");
-       
+       echo("<h3>$sql</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -32,7 +32,7 @@ if ($result->num_rows > 0) {
 $sql = "SELECT * from pracownicy where imie not like'%a'";
 $result = $conn->query($sql);
         echo("<h3>zadanie 2</h3>");
-      
+      echo("<h3>$sql</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -55,7 +55,7 @@ if ($result->num_rows > 0) {
 $sql = "SELECT * from pracownicy where imie like '%a'";
 $result = $conn->query($sql);
         echo("<h3>zadanie 3 </h3>");
-
+        echo("<h3>$sql</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
