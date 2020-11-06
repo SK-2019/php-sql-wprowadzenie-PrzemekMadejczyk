@@ -53,7 +53,7 @@ require_once('log.php');
         echo("</table>");
     echo("<hr />");;
     
-    $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=1 or dzial=4 and imie NOT LIKE '%a'');
+    $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and imie LIKE '%a'');
     $result=$conn->query($sql);
         echo("<hr />");
         echo("<h3>Tabela Pracowników</h3>");
