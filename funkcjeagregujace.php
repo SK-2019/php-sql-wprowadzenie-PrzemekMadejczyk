@@ -12,4 +12,21 @@
 <h1>Przemek Madejczyk 2Ti</h1>  
 <h3>Funkcje Agregujące</h3>  
 <?php
-                
+      require_once('log.php');
+    $sql = "SELECT * from pracownicy where imie not like'%a'";
+$result = $conn->query($sql);
+        echo("<h3>zadanie 3</h3>");
+      echo("<h3>$sql</h3>");
+        echo("<table border=1>");
+        echo("<th>id</th>");
+        echo("<th>imie</th>");
+        echo("<th>dzial</th>");
+        echo("<th>zarobki</th>");
+  while($row = $result->fetch_assoc()) {
+    echo("<tr>");
+    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td>");
+    echo("</tr>");
+  }
+  echo("</table>");
+echo("<hr />");
+?>
