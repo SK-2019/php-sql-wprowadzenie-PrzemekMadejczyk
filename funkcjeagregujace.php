@@ -13,7 +13,7 @@
 <h3>Funkcje Agregujące</h3>  
 <?php
       require_once('log.php');
-    $sql = "SELECT * from pracownicy where imie not like'%a'";
+    $sql = "SELECT dzial,avg(zarobki) as srednia from pracownicy group by dzial";
 $result = $conn->query($sql);
         echo("<h3>zadanie 3</h3>");
       echo("<h3>$sql</h3>");
