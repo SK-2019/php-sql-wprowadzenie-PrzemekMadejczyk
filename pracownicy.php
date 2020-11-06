@@ -4,6 +4,10 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="nav">
+    <a class="nav_link" href="pracownicy.php">Pracownicy - wstęp</a>
+    <a class="nav_link" href="funkcjeagregujace.php">Funkcje Agregujące</a>
+</div>>
 <?php
     require_once('log.php');;
     $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org');//mysql
