@@ -40,7 +40,7 @@ echo("<hr />");
     }
       $sql = "SELECT dzial,min(zarobki) as minimalna from pracownicy group by dzial";
     $result=$conn->query($sql);
-        echo("<h3>zadanie 2</h3>");
+        echo("<h3>zadanie 3</h3>");
       echo("<table border=1>");                
     echo("<th>dzial</th>");
     echo("<th>minimalna</th>");
