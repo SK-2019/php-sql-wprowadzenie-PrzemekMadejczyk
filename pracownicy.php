@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
 <?php
 echo("tu są: Pracownicy");
 $sql = "SELECT * from pracownicy";
