@@ -185,7 +185,7 @@ echo("<hr />");
     
     
     
-                    $sql=('SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE '%a' order by  nazwa_dzial asc, zarobki asc');
+                    $sql=('SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE "%a" order by  nazwa_dzial asc, zarobki asc');
     $result=$conn->query($sql);
         echo("<h3>zadanie 7</h3>");//nazwa nad tabelą
         echo("<li>SQL: $sql");
