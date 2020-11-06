@@ -114,9 +114,31 @@ echo("<hr />");
 echo("<hr />");
     
     
-             $sql=('SELECT  * FROM pracownicy,organizacja WHERE id_org=dzial and dzial =3 order by imie desc');
+             $sql=('SELECT  * FROM pracownicy,organizacja WHERE id_org=dzial and dzial =3 order by imie asc');
     $result=$conn->query($sql);
-        echo("<h3>zadanie 5</h3>");//nazwa nad tabelą
+        echo("<h3>zadanie 6</h3>");//nazwa nad tabelą
+        echo("<li>SQL: $sql");
+        echo("<table border=1>");
+        echo("<th>id</th>");
+        echo("<th>imię</th>");
+        echo("<th>dział</th>");
+        echo("<th>zarobki</th>");
+        echo("<th>nazwa działu</th>");
+        echo("<th>data urodzenia</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+echo("<hr />");
+    
+    
+    
+    
+                 $sql=('SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE '%a' order by imie asc');
+    $result=$conn->query($sql);
+        echo("<h3>zadanie 6</h3>");//nazwa nad tabelą
         echo("<li>SQL: $sql");
         echo("<table border=1>");
         echo("<th>id</th>");
