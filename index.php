@@ -13,7 +13,7 @@
 <?php
 require_once('log.php');
                 echo("<h3>zadanie 1 </h3>");
-$sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
+  $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql);
         echo("<hr />");
         echo("<h3>Tabela Pracowników</h3>");
@@ -32,7 +32,6 @@ $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
             }
         echo("</table>");
     echo("<hr />");
-                echo("<h3>zadanie 2 </h3>");
     $sql=('SELECT * from pracownicy,organizacja where dzial=id_org and imie like "%a"');
     $result=$conn->query($sql);
         echo("<h3>Tabela Kobiet</h3>");//nazwa nad tabelą
@@ -48,6 +47,9 @@ $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
                 echo("<tr>");
                     echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
                 echo("</tr>");
+            }
+        echo("</table>");
+echo("<hr />");
         echo("<h3>zadanie 3 </h3>");
 $sql = "SELECT * from pracownicy where imie not like'%a'";
 $result = $conn->query($sql);
