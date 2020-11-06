@@ -14,7 +14,7 @@
 <?php
 require_once('log.php');
                
-   $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2');//mysql
+    $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2');//mysql
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -61,7 +61,6 @@ require_once('log.php');
             }
         echo("</table>");
         echo("<hr />");
-
 
 $conn->close();
 ?>
