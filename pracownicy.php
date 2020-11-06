@@ -11,9 +11,8 @@
 </div>>
     <h1>Pracownicy</h1>
 <?php
-    echo("<hr />");
+        echo("<hr />");
     require_once('log.php');;
-    echo("<h3>zadanie 1 </h3>");
     $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2');//mysql
         echo("<table border=1>");
         echo("<th>id</th>");
@@ -30,7 +29,7 @@
         echo("</table>");
         echo("<hr />");
 
-        $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2 or dzial=3');//mysq
+        $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2 or dzial=3');//mysql
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -47,7 +46,6 @@
         echo("<hr />");
         
         $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org and zarobki<30');//mysql
-        echo(<h3>zadanaie 1</h3>)
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
