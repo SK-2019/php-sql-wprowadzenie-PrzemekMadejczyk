@@ -5,7 +5,7 @@
 </head>
 <body>
 <?php
-     require_once('conn.php');
+    require_once('log.php');;
     $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org');//mysql
         echo("<h3>Tabela Pracowników</h3>");
         echo("<table border=1>");
