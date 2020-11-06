@@ -14,17 +14,15 @@
 <?php
       require_once('log.php');
     $sql = "SELECT dzial,avg(zarobki) as srednia from pracownicy group by dzial";
-$result = $conn->query($sql);
         echo("<h3>zadanie 3</h3>");
       echo("<table border=1>");                
-                    echo("<th>dział</th>");
-                    echo("<th>średnia</th>");
-                        while($row=$result->fetch_assoc()){
-                            echo("<tr>");
-                                echo("<td>".$row["dzial"]."</td><td>".$row["srednia"]."</td>");
-                            echo("</tr>");
-                            }
-                    echo("</table>");
+    echo("<th>dzial</th>");
+    echo("<th>srednia</th>");
+    while($row=$result->fetch_assoc()){
+    echo("<tr>");
+    echo("<td>".$row["dzial"]."</td><td>".$row["srednia"]."</td>"); 
+    echo("</tr>");
+
   }
   echo("</table>");
 echo("<hr />");
