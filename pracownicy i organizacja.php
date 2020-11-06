@@ -33,7 +33,7 @@ require_once('log.php');
         echo("</table>");
     echo("<hr />");;
     
-      $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=1 and dzial=4');
+      $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=1 or dzial=4');
     $result=$conn->query($sql);
         echo("<hr />");
         echo("<h3>Tabela Pracowników</h3>");
