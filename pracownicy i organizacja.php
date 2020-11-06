@@ -13,7 +13,7 @@
 </div>>
 <?php
 require_once('log.php');
-      $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
+      $sql=('SELECT  * FROM pracownicy,organizacja WHERE dzial = nazwa_dzial);
     $result=$conn->query($sql);
         echo("<hr />");
         echo("<h3>Tabela Pracowników</h3>");
