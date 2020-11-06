@@ -58,18 +58,4 @@ echo("<hr />");
   }
   echo("</table>");
 echo("<hr />");
-        $sql = "SELECT dzial,max(zarobki) as maksymalna from pracownicy group by dzial";
-    $result=$conn->query($sql);
-    echo("<h3>zadanie 3</h3>");
-    echo("<table border=1>");                
-    echo("<th>dzial</th>");
-    echo("<th>maksymalna</th>");
-        while($row=$result->fetch_assoc()){
-    echo("<tr>");
-    echo("<td>".$row["dzial"]."</td><td>".$row["maksymalna"]."</td>"); 
-    echo("</tr>");
-
-  }
-  echo("</table>");
-echo("<hr />");
 ?>
