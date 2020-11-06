@@ -10,6 +10,7 @@
 <div class="nav">
     <a class="nav_link" href="pracownicy.php">Pracownicy - wstęp</a>
     <a class="nav_link" href="funkcjeagregujace.php">Funkcje Agregujące</a>
+    <a class="nav_link" href="pracownicy i organizacja.php">Pracownicy i Organizacja</a>
 </div>>
 <?php
 require_once('log.php');
