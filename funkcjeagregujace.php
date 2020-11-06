@@ -9,14 +9,13 @@
 </div>
 </head>
 <body>
-<h1>Przemek Madejczyk 2Ti</h1>  
-<h3>Funkcje Agregujące</h3>  
+<h2>Funkcje Agregujące</h2>  
 <?php
       require_once('log.php');
     
     $sql = "SELECT dzial,avg(zarobki) as srednia from pracownicy group by dzial";
     $result=$conn->query($sql);
-        echo("<h3>zadanie 3</h3>");
+        echo("<h3>zadanie 1</h3>");
       echo("<table border=1>");                
     echo("<th>dzial</th>");
     echo("<th>srednia</th>");
@@ -28,4 +27,20 @@
   }
   echo("</table>");
 echo("<hr />");
+    
+        $sql = "SELECT dzial,sum(zarobki) as suma from pracownicy group by dzial";
+    $result=$conn->query($sql);
+        echo("<h3>zadanie 1</h3>");
+      echo("<table border=1>");                
+    echo("<th>dzial</th>");
+    echo("<th>suma</th>");
+    while($row=$result->fetch_assoc()){
+    echo("<tr>");
+    echo("<td>".$row["dzial"]."</td><td>".$row["suma"]."</td>"); 
+    echo("</tr>");
+
+  }
+  echo("</table>");
+echo("<hr />");
+    
 ?>
