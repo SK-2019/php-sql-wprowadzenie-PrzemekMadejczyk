@@ -13,8 +13,9 @@
 <h3>Funkcje Agregujące</h3>  
 <?php
       require_once('log.php');
-    $result=$conn->query($sql);
+    
     $sql = "SELECT dzial,avg(zarobki) as srednia from pracownicy group by dzial";
+    $result=$conn->query($sql);
         echo("<h3>zadanie 3</h3>");
       echo("<table border=1>");                
     echo("<th>dzial</th>");
@@ -26,5 +27,5 @@
 
   }
   echo("</table>");
-//echo("<hr />");
+echo("<hr />");
 ?>
