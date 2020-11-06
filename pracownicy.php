@@ -13,6 +13,7 @@
 <?php
     require_once('log.php');;
     $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2');//mysql
+    echo(<h3>zadanaie 1</h3>)
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -29,6 +30,7 @@
         echo("<hr />");
 
         $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2 or dzial=3');//mysql
+         echo(<h3>zadanaie 1</h3>)
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -45,6 +47,7 @@
         echo("<hr />");
         
         $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org and zarobki<30');//mysql
+        echo(<h3>zadanaie 1</h3>)
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
