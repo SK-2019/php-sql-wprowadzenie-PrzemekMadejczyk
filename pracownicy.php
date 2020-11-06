@@ -11,6 +11,7 @@
 </div>>
     <h1>Pracownicy</h1>
 <?php
+    echo("<hr />");
     require_once('log.php');;
     echo("<h3>zadanie 1 </h3>");
     $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2');//mysql
