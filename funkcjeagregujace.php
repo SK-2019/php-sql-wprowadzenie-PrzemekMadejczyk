@@ -38,6 +38,8 @@ echo("<hr />");
     echo("<td>".$row["dzial"]."</td><td>".$row["suma"]."</td>"); 
     echo("</tr>");
     }
+      echo("</table>");
+echo("<hr />");
       $sql = "SELECT dzial,min(zarobki) as minimalna from pracownicy group by dzial";
     $result=$conn->query($sql);
         echo("<h3>zadanie 3</h3>");
@@ -49,5 +51,6 @@ echo("<hr />");
     echo("<td>".$row["dzial"]."</td><td>".$row["minimalna"]."</td>"); 
     echo("</tr>");
     }
-
+  echo("</table>");
+echo("<hr />");
 ?>
