@@ -8,7 +8,7 @@
 <h1>Przemek Madejczyk 2ti 20</h1>
 <div class="nav">
         <a class ="nav_link" href="pracownicy.php">Pracownicy - wstęp</a>
-    =   <a class ="nav_link" href="funkcAgregujace.php">Funkcje Agregujace</a>
+        <a class ="nav_link" href="funkcAgregujace.php">Funkcje Agregujace</a>
 </div>       
 <?php
 require_once('log.php');
