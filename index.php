@@ -12,28 +12,43 @@
 </div>       
 <?php
 require_once('log.php');
-$sql = "SELECT * from pracownicy";
-$result = $conn->query($sql);
-        echo("<h3>zadanie 1</h3>");
-       echo("<h3>$sql</h3>");
+                echo("<h3>zadanie 1 </h3>");
+$sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
+    $result=$conn->query($sql);
+        echo("<hr />");
+        echo("<h3>Tabela Pracowników</h3>");
+        echo("<li>SQL: $sql");
         echo("<table border=1>");
         echo("<th>id</th>");
-        echo("<th>imie</th>");
-        echo("<th>dzial</th>");
+        echo("<th>imię</th>");
+        echo("<th>dział</th>");
         echo("<th>zarobki</th>");
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo("<tr>");
-    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td>");
-    echo("</tr>");
-  }
-  echo("</table>");
-} else {
-  echo "0 results";
-}
-
+        echo("<th>nazwa działu</th>");
+        echo("<th>data urodzenia</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+    echo("<hr />");
+                echo("<h3>zadanie 2 </h3>");
+    $sql=('SELECT * from pracownicy,organizacja where dzial=id_org and imie like "%a"');
+    $result=$conn->query($sql);
+        echo("<h3>Tabela Kobiet</h3>");//nazwa nad tabelą
+        echo("<li>SQL: $sql");
+        echo("<table border=1>");
+        echo("<th>id</th>");
+        echo("<th>imię</th>");
+        echo("<th>dział</th>");
+        echo("<th>zarobki</th>");
+        echo("<th>nazwa działu</th>");
+        echo("<th>data urodzenia</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
+                echo("</tr>");
+        echo("<h3>zadanie 3 </h3>");
 $sql = "SELECT * from pracownicy where imie not like'%a'";
 $result = $conn->query($sql);
         echo("<h3>zadanie 2</h3>");
@@ -57,26 +72,6 @@ if ($result->num_rows > 0) {
 }
 
 
-$sql = "SELECT * from pracownicy where imie like '%a'";
-$result = $conn->query($sql);
-        echo("<h3>zadanie 3 </h3>");
-        echo("<h3>$sql</h3>");
-        echo("<table border=1>");
-        echo("<th>id</th>");
-        echo("<th>imie</th>");
-        echo("<th>dzial</th>");
-        echo("<th>zarobki</th>");
 
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo("<tr>");
-    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td>");
-    echo("</tr>");
-  }
-  echo("</table>");
-} else {
-  echo "0 results";
-}
 $conn->close();
 ?>
