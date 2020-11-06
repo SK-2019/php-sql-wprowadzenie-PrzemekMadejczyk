@@ -5,10 +5,11 @@
 </head>
 <body>
     <div class="nav">
-    <a class="nav_link" href="pracownicy.php">Pracownicy - wstęp</a>
+    
     <a class="nav_link" href="funkcjeagregujace.php">Funkcje Agregujące</a>
        <a class="nav_link" href="index.php">Strona Główna</a>
 </div>>
+    <h1>Pracownicy</h1>
 <?php
     require_once('log.php');;
     $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org');//mysql
