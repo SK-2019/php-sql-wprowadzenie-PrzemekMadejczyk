@@ -12,42 +12,35 @@
 <h1>Przemek Madejczyk 2Ti</h1>  
 <h3>Funkcje Agregujące</h3>  
 <?php
-   echo("<hr />")
-      $sql=('SELECT dzial, sum(zarobki) as suma  FROM pracownicy,organizacja where dzial=id_org');
-    $result=$conn->query($sql);
-        echo("<hr />");
-         echo("<h3>zadanie 1 </h3>");;
-        echo("<li>SQL: $sql");
+   $sql = "SELECT dzial,sum(zarobki) as suma from pracownicy group by dzial";
+$result = $conn->query($sql);
+        echo("<h3>zadanie 3</h3>");
+      echo("<h3>$sql</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
-        echo("<th>imię</th>");
-        echo("<th>dział</th>");
+        echo("<th>imie</th>");
+        echo("<th>dzial</th>");
         echo("<th>zarobki</th>");
-        echo("<th>nazwa działu</th>");
-        echo("<th>data urodzenia</th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
-                echo("</tr>");
-            }
-        echo("</table>");
-    echo("<hr />");
-   $sql=('SELECT dzial, avg(zarobki) as srednia  FROM pracownicy,organizacja where dzial=id_org');
-    $result=$conn->query($sql);
-        echo("<hr />");
-         echo("<h3>zadanie 1 </h3>");;
-        echo("<li>SQL: $sql");
+  while($row = $result->fetch_assoc()) {
+    echo("<tr>");
+    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td>");
+    echo("</tr>");
+  }
+  echo("</table>");
+echo("<hr />");
+    $sql = SELECT dzial,avg(zarobki) as srednia from pracownicy group by dzial";
+$result = $conn->query($sql);
+        echo("<h3>zadanie 3</h3>");
+      echo("<h3>$sql</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
-        echo("<th>imię</th>");
-        echo("<th>dział</th>");
+        echo("<th>imie</th>");
+        echo("<th>dzial</th>");
         echo("<th>zarobki</th>");
-        echo("<th>nazwa działu</th>");
-        echo("<th>data urodzenia</th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
-                echo("</tr>");
-            }
-        echo("</table>");
-    echo("<hr />");
+  while($row = $result->fetch_assoc()) {
+    echo("<tr>");
+    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td>");
+    echo("</tr>");
+  }
+  echo("</table>");
+echo("<hr />");
