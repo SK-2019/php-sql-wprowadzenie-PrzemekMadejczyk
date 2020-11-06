@@ -53,10 +53,9 @@ require_once('log.php');
         echo("</table>");
     echo("<hr />");;
     
-    $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and imię LIKE '%a'');
+   $sql=('SELECT * from pracownicy,organizacja where dzial=id_org and imie like "%a"');
     $result=$conn->query($sql);
-        echo("<hr />");
-        echo("<h3>Tabela Pracowników</h3>");
+        echo("<h3>Tabela Kobiet</h3>");//nazwa nad tabelą
         echo("<li>SQL: $sql");
         echo("<table border=1>");
         echo("<th>id</th>");
@@ -71,5 +70,4 @@ require_once('log.php');
                 echo("</tr>");
             }
         echo("</table>");
-    echo("<hr />");;
-
+echo("<hr />");
