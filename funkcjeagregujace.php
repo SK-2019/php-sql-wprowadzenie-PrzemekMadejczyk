@@ -176,7 +176,6 @@ echo("<hr />");
             }
         echo("</table>");
 echo("<hr />");
-            echo("<h2>Having</h2>");
-            echo("<hr />");
-?>
+            
+
 ?>
