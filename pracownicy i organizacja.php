@@ -11,7 +11,7 @@
     <a class="nav_link" href="funkcjeagregujace.php">Funkcje Agregujące</a>
     <a class="nav_link" href="pracownicy i organizacja.php">Pracownicy i Organizacja</a>
     <a class="nav_link" href="index.php">strona głowna</a>
-</div>>
+</div>
 <?php
 require_once('log.php');
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
