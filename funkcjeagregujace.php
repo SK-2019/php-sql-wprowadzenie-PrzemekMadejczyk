@@ -182,16 +182,19 @@ echo("<hr />");
         echo("</table>");
 echo("<hr />");
     echp("<h2>having</h2>")
-         <h2>Select sum(zarobki) as sz, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by nazwa_dzial having sum(zarobki)<28</h2>
-                $result=$conn->query("Select sum(zarobki) as sz, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by nazwa_dzial having sum(zarobki)<28");
-                echo("<table border=1>");
-                    echo("<th>sum(zarobki)</th>");
-                    echo("<th>nazwa_dzial</th>");
-                        while($row=$result->fetch_assoc()){
-                            echo("<tr>");
-                            echo("<td>".$row["sz"]."</td><td>".$row["nazwa_dzial"]."</td>");
-                            echo("</tr>");}
-                echo("</table>");
+//               $sql=('SELECT sum(zarobki) as suma,nazwa_dzial from pracownicy, organizacja GROUP BY dzial HAVING sum(zarobki) < 28 ');
+//     $result=$conn->query($sql); //mysql
+//         echo("<h3>Średnie zarobków w poszczególnych działach</h3>");//nazwa nad tabelą
+//         echo("<table border=1>");
+//         echo("<li>SQL: $sql");
+//         echo("<th>suma</th>");
+//         echo("<th>nazwa działu</th>");
+//             while($row=$result->fetch_assoc()){
+//                 echo("<tr>");
+//                     echo("<td>".$row['suma']."</td><td>".$row['nazwa_dzial']."</td>");
+//                 echo("</tr>");
+//             }
+//         echo("</table>");
       
      
             
