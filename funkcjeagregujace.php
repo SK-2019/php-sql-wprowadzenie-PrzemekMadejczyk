@@ -182,12 +182,10 @@ echo("<hr />");
         echo("</table>");
 echo("<hr />");
     echp("<h2>having</h2>")
-        
-    // <h2>Select sum(zarobki) as sz, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by nazwa_dzial having sum(zarobki)<28</h2>
-        
-                $result=$conn->query("Select sum(zarobki) as suma, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by nazwa_dzial having sum(zarobki)<28");
+                $sql=("Select sum(zarobki) as suma, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by nazwa_dzial having sum(zarobki)<28");
+    $result=$conn->query($sql);
                 echo("<table border=1>");
-                    echo("<th>sum(zarobki)</th>");
+                    echo("<th>suma</th>");
                     echo("<th>nazwa_dzial</th>");
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
