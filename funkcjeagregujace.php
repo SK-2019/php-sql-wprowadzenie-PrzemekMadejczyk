@@ -182,20 +182,20 @@ echo("<hr />");
         echo("</table>");
 echo("<hr />");
     echo("<h2>having</h2>")
-                  $sql=('SELECT nazwa_dzial,sum(zarobki)as suma from pracownicy, organizacja where dzial=id_org GROUP BY nazwa_dzial HAVING sum(zarobki) < 28 ');
-    $result=$conn->query($sql); //mysql
-        echo("<h3>Suma zarobków w poszczególnych działach mniejsza od 28</h3>");//nazwa nad tabelą
-        echo("<table border=1>");
-        echo("<li>SQL: $sql");
-        echo("<th>suma</th>");
-        echo("<th>nazwa działu</th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>".$row['suma']."</td><td>".$row['nazwa_dzial']."</td>");
-                echo("</tr>");
-            }
-        echo("</table>");
-        echo("<hr>")
+//                   $sql=('SELECT nazwa_dzial,sum(zarobki)as suma from pracownicy, organizacja where dzial=id_org GROUP BY nazwa_dzial HAVING sum(zarobki) < 28 ');
+//     $result=$conn->query($sql); //mysql
+//         echo("<h3>Suma zarobków w poszczególnych działach mniejsza od 28</h3>");//nazwa nad tabelą
+//         echo("<table border=1>");
+//         echo("<li>SQL: $sql");
+//         echo("<th>suma</th>");
+//         echo("<th>nazwa działu</th>");
+//             while($row=$result->fetch_assoc()){
+//                 echo("<tr>");
+//                     echo("<td>".$row['suma']."</td><td>".$row['nazwa_dzial']."</td>");
+//                 echo("</tr>");
+//             }
+//         echo("</table>");
+//         echo("<hr>")
      
             
 
