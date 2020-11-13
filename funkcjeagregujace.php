@@ -186,7 +186,7 @@ echo("<hr />");
             echo("<hr />");
 
             
-            $sql=('SELECT sum(zarobki),nazwa_dzial from pracownicy, organizacja GROUP BY dzial HAVING sum(zarobki) < 28) < 28 ');
+            $sql=('SELECT sum(zarobki),nazwa_dzial from pracownicy, organizacja GROUP BY dzial HAVING sum(zarobki) < 28)');
     $result=$conn->query($sql); //mysql
         echo("<h3>Suma zarobków w poszczególnych działach mniejsza od 28</h3>");//nazwa nad tabelą
         echo("<table border=1>");
