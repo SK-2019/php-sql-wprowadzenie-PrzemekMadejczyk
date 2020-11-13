@@ -70,7 +70,7 @@ require_once('log.php');
                     $result=$conn->query($sql);//mysql
                         echo("<table border=1>");
                         echo("<li>SQL: $sql");
-                        echo("<th>Suma</th>");
+                        echo("<th>Suma_lat</th>");
                             while($row=$result->fetch_assoc()){
                                 echo("<tr>");
                                     echo("<td>".$row['Suma_lat']."</td>");
