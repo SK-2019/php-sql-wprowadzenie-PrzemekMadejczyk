@@ -24,7 +24,7 @@ require_once('log.php');
             $sql=('SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy,organizacja where dzial=id_org');
                     $result=$conn->query($sql);
                         echo("<table border=1>");
-                        echo("<li>SQL: $sql");
+                        echo("<li>SQL:  $sql ");
                         echo("<th>id</th>");
                         echo("<th>imie</th>");
                         echo("<th>dzial</th>");
