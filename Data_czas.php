@@ -109,3 +109,19 @@ require_once('log.php');
                             }
                         echo("</table>");
                         echo("<hr />");
+    
+    
+                    echo("<h3>zadanie 6</h3>");
+                  echo("<h3>Suma lat mężczyzn</h3>");
+                        $sql=('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SumaWiekuMezczyzn from pracownicy WHERE imie NOT LIKE "%a"');
+                    $result=$conn->query($sql);//mysql
+                        echo("<table border=1>");
+                        echo("<li>SQL: $sql");
+                        echo("<th>SumaWiekuMezczyzn</th>");
+                            while($row=$result->fetch_assoc()){
+                                echo("<tr>");
+                                    echo("<td>".$row['SumaWiekuMezczyzn']."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+                        echo("<hr />");
