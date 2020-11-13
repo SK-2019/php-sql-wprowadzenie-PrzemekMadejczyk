@@ -143,7 +143,7 @@ require_once('log.php');
                         echo("</table>");
                         echo("<hr />");
     
-    
+        echo("<h3>zadanie 8   </h3>");
        echo("<h3>Suma lat pracowników w poszczególnych działach  </h3>");
                         $sql=('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SumaWieku, nazwa_dzial from pracownicy,organizacja WHERE id_org=dzial GROUP BY dzial;');
                     $result=$conn->query($sql);//mysql
