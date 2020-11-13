@@ -18,8 +18,9 @@
 <?php
 require_once('log.php');
        echo("<hr>");
-                        echo("<h3>Wiek poszczególnych pracowników (w latach)</h3>");
-                        echo("<h3>zadanie 1</h3>");
+                echo("<h3>zadanie 1</h3>");
+                echo("<h3>Wiek poszczególnych pracowników (w latach)</h3>");
+                        
             $sql=('SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy,organizacja where dzial=id_org');
                     $result=$conn->query($sql);//mysql
                         echo("<table border=1>");
