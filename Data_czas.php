@@ -63,3 +63,18 @@ require_once('log.php');
         }
         echo("</table>");
         echo("<hr />");
+    
+      echo("<h3>zadanie 3</h3>");
+      echo("<h3>Suma lat wszystkich pracowników</h3>");
+                        $sql=('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy');
+                    $result=$conn->query($sql);//mysql
+                        echo("<table border=1>");
+                        echo("<li>SQL: $sql");
+                        echo("<th>Suma</th>");
+                            while($row=$result->fetch_assoc()){
+                                echo("<tr>");
+                                    echo("<td>".$row['Suma']."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+                        echo("<hr />");
