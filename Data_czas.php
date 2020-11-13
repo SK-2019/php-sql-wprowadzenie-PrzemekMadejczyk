@@ -142,4 +142,20 @@ require_once('log.php');
                             }
                         echo("</table>");
                         echo("<hr />");
+    
+    
+       echo("<h3>Suma lat pracowników w poszczególnych działach  </h3>");
+                        $sql=('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SumaWieku, nazwa_dzial from pracownicy,organizacja WHERE id_org=dzial GROUP BY dzial;');
+                    $result=$conn->query($sql);//mysql
+                        echo("<table border=1>");
+                        echo("<li>SQL: $sql");
+                        echo("<th>SumaWieku</th>");
+                        echo("<th>nazwa działu</th>");
+                            while($row=$result->fetch_assoc()){
+                                echo("<tr>");
+                                    echo("<td>".$row['SumaWieku']."</td><td>".$row['nazwa_dzial']."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+                        echo("<hr />");
         
