@@ -22,7 +22,7 @@ require_once('log.php');
                 echo("<h3>Wiek poszczególnych pracowników (w latach)</h3>");
                         
             $sql=('SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy,organizacja where dzial=id_org');
-                    $result=$conn->query($sql);//mysql
+                    $result=$conn->query($sql);
                         echo("<table border=1>");
                         echo("<li>SQL: $sql");
                         echo("<th>id</th>");
@@ -45,7 +45,7 @@ require_once('log.php');
         echo("<h3>zadanie 2</h3>");
         echo("<h3>Wiek poszczególnych pracowników (w latach) z działu serwis</h3>");
                 $sql=('SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy,organizacja where dzial=id_org and nazwa_dzial="serwis"');
-                $result=$conn->query($sql);//mysql
+                $result=$conn->query($sql);
         echo("<table border=1>");
         echo("<li>SQL: $sql");
         echo("<th>id</th>");
@@ -67,7 +67,7 @@ require_once('log.php');
       echo("<h3>zadanie 3</h3>");
       echo("<h3>Suma lat wszystkich pracowników</h3>");
                         $sql=('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma_lat from pracownicy');
-                    $result=$conn->query($sql);//mysql
+                    $result=$conn->query($sql);
                         echo("<table border=1>");
                         echo("<li>SQL: $sql");
                         echo("<th>Suma_lat</th>");
@@ -82,7 +82,7 @@ require_once('log.php');
     echo("<h3>zadanie 4</h3>");
     echo("<h3>Suma lat pracowników z działu handel</h3>");
                         $sql=('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial="handel";');
-                    $result=$conn->query($sql);//mysql
+                    $result=$conn->query($sql);
                         echo("<table border=1>");
                         echo("<li>SQL: $sql");
                         echo("<th>Suma</th>");
@@ -114,7 +114,7 @@ require_once('log.php');
                     echo("<h3>zadanie 6</h3>");
                   echo("<h3>Suma lat mężczyzn</h3>");
                         $sql=('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SumaWiekuMezczyzn from pracownicy WHERE imie NOT LIKE "%a"');
-                    $result=$conn->query($sql);//mysql
+                    $result=$conn->query($sql);
                         echo("<table border=1>");
                         echo("<li>SQL: $sql");
                         echo("<th>SumaWiekuMezczyzn</th>");
@@ -125,3 +125,21 @@ require_once('log.php');
                             }
                         echo("</table>");
                         echo("<hr />");
+        
+    
+                     echo("<h3>zadanie 7</h3>");
+                     echo("<h3>Średnia lat pracowników w poszczególnych działach</h3>");
+                        $sql=('SELECT AVG(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SredniaWieku, nazwa_dzial from pracownicy,organizacja WHERE id_org=dzial GROUP BY dzial;');
+                    $result=$conn->query($sql);
+                        echo("<table border=1>");
+                        echo("<li>SQL: $sql");
+                        echo("<th>SredniaWieku</th>");
+                        echo("<th>nazwa działu</th>");
+                            while($row=$result->fetch_assoc()){
+                                echo("<tr>");
+                                    echo("<td>".$row['SredniaWieku']."</td><td>".$row['nazwa_dzial']."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+                        echo("<hr />");
+        
