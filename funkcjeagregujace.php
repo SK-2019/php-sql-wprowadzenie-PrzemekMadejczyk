@@ -182,7 +182,7 @@ echo("<hr />");
         echo("</table>");
 echo("<hr />");
     echo("<h2>having</h2>")
-  echo("<h2>Having</h2>");
+     echo("<h2>Having</h2>");
             echo("<hr />");
 
             
@@ -197,6 +197,10 @@ echo("<hr />");
                 echo("<tr>");
                     echo("<td>".$row['suma']."</td><td>".$row['nazwa_dzial']."</td>");
                 echo("</tr>");
+            }
+        echo("</table>");
+        echo("<hr>");
+
             
 
 ?>
