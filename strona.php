@@ -1,5 +1,7 @@
 <?php
 
-echo("jesteś na stronie.php")
+echo("jesteś na strona.php");
+
 echo($_POST["imie"]);
+
 ?>
