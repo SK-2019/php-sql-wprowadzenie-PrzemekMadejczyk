@@ -14,5 +14,5 @@ $sql = "INSERT INTO `pracownicy`(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `d
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
   }
-  $conn->close();
+  $conn->close();;
 ?>
