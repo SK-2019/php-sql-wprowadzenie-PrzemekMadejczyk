@@ -16,7 +16,7 @@
   <a class="nav_link" href="index.php">strona głowna</a>
   <a class="nav_link" href="Data_czas.php">Data i czas</a>
   <a class="nav_link" href="formularz.html">Formularze</a>
-  
+  <a class="nav_link" href="insert.php">insert</a>
 </div>
 <?php
 require_once('conn.php');
