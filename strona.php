@@ -3,20 +3,10 @@
 <?php
 
 echo("jesteś na stronie.php");
-echo("<h3>Imie</h3>");
-echo($_POST["imie"]);
-echo("</br>");
-echo("<h3>Nazwisko</h3>");
-echo($_POST["nazwisko"]);
-echo("</br>");
-echo("<h3>Pesel</h3>");
-echo($_POST["pesel"]);
-echo("</br>");
-echo("<h3>Urodziny</h3>");
-echo($_POST["urodziny"]);
-echo("</br>");
-echo("<h3>Adres</h3>");
-echo($_POST["adres"]);
+echo("<li>imię:".$_POST["imie"]);
+echo("<li>dział:".$_POST["dzial"]);
+echo("<li>zarobki:".$_POST["zarobki"]);
+echo("<li>data urodzenia:".$_POST["data_"])
    require_once('log.php');
 $sql = "INSERT INTO `pracownicy`(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES (null,"Przemek",2,40,1996-01-11)";"
   
