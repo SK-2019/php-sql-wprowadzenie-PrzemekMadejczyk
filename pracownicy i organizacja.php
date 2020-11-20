@@ -14,7 +14,7 @@
     <a class="nav_link" href="index.php">strona głowna</a>
 </div>
 <?php
-require_once('log.php');
+require_once('conn.php');
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql);
         echo("<hr />");
