@@ -1,9 +1,9 @@
 <?php
-echo("jestes w delete.php <br>");
-echo $_POST['id'];
+require_once("conn.php");
+$sql =  "DELETE FROM pracownicy where id_pracownicy='".$_POST['id']."'";
+echo($sql);
+mysqli_query($conn,$sql);
+mysqli_close($conn);
+header("location:https://index-a.herokuapp.com/formularz");
 
-  require_once('conn.php');
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
+?>
