@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
 <?php
+<strong><a href="https://github.com/SK-2019/php-sql-wprowadzenie-PrzemekMadejczyk">Github</a></strong>
 
+<div class="nav">
+    <a class="nav_link" href="pracownicy.php">Pracownicy - wstęp</a>
+    <a class="nav_link" href="funkcjeagregujace.php">Funkcje Agregujące</a>
+    <a class="nav_link" href="pracownicy i organizacja.php">Pracownicy i Organizacja</a>
+  <a class="nav_link" href="index.php">strona głowna</a>
+  <a class="nav_link" href="Data_czas.php">Data i czas</a>
+  <a class="nav_link" href="formularz.html">Formularze</a
+   
 echo("jesteś na stronie.php");
 echo("<li>imię:".$_POST["imie"]);
 echo("<li>dział:".$_POST["dzial"]);
