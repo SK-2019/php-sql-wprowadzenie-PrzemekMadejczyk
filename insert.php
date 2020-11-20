@@ -19,3 +19,4 @@ echo("<li>data urodzenia:".$_POST["data_"]);
     echo "Error: " . $sql . "<br>" . $conn->error;
   }
   $conn->close();
+?>
