@@ -8,7 +8,7 @@ echo("<li>dział:".$_POST["dzial"]);
 echo("<li>zarobki:".$_POST["zarobki"]);
 echo("<li>data urodzenia:".$_POST["data_"])
    require_once('log.php');
-$sql = "INSERT INTO `pracownicy`(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES (null,"Przemek",2,40,1996-01-11)";"
+$sql = "INSERT INTO `pracownicy`(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES (null,$_POST["imie"],$_POST["dzial"],$_POST["zarobki"],$_POST["data_"]);
   
   if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
