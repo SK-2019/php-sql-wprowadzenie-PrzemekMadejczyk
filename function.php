@@ -20,7 +20,7 @@
 </div>
 <?php
 require_once('conn.php');
-<?php
+
 echo("asd");
 function nazwajakas()
 {
