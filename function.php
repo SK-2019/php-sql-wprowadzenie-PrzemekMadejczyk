@@ -29,7 +29,7 @@ function funkcja()
         echo("<li>to jest w petli: ".$i);
     }
 }
-  
+  funkcja();
 function robot($sql){
   require_once('conn.php');
     $result=$conn->query($sql);
