@@ -45,7 +45,7 @@ function robot($sql){
             }
         echo("</table>");
         }
-robot('SELECT * FROM pracownicy');'
+robot('SELECT * FROM pracownicy');
   
   
 ?>
