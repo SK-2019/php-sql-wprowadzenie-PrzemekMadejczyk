@@ -19,7 +19,7 @@
   <a class="nav_link" href="function.php">funkcja</a>
 </div>
 <?php
-require_once('conn.php');
+
 
 function funkcja()
 {
@@ -29,6 +29,7 @@ function funkcja()
         echo("<li>to jest w petli: ".$i);
     }
 }
+  require_once('conn.php');
 function robot($sql){
     $result=$conn->query($sql);
         echo("<table border=1>");
