@@ -29,8 +29,9 @@ function funkcja()
         echo("<li>to jest w petli: ".$i);
     }
 }
-  require_once('conn.php');
+  
 function robot($sql){
+  require_once('conn.php');
     $result=$conn->query($sql);
         echo("<table border=1>");
         echo("<h3>SQL: $sql");
