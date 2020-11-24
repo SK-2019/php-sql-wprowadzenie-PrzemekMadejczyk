@@ -21,15 +21,14 @@
 <?php
 require_once('conn.php');
 
-echo("asd");
-function nazwajakas()
+function funkcja()
 {
-  echo("<li>teraz działa funkcja");
-  echo("<li test ");
-  for($i =1; $i <10; $i++)
-  {
-  echo("lito jest w petli: ".$i);
-  }
+    echo("<li>test");
+    for($i=1;$i<10;$i++)
+    {
+        echo("<li>to jest w petli: ".$i);
+    }
 }
-nazwajakas();
+funkcja();
+?>
 ?>
