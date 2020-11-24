@@ -29,12 +29,11 @@ function funkcja()
         echo("<li>to jest w petli: ".$i);
     }
 }
-funkcja();
 function robot($sql){
     require_once("conn.php");
     $result=$conn->query($sql);
         echo("<table border=1>");
-        echo("<li>SQL: $sql");
+        echo("<h3>SQL: $sql");
         echo("<th>id</th>");
         echo("<th>imię</th>");
         echo("<th>dział</th>");
@@ -46,7 +45,7 @@ function robot($sql){
             }
         echo("</table>");
         }
-robot('SELECT * FROM pracownicy');
+robot('SELECT * FROM pracownicy');'
   
   
 ?>
