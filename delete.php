@@ -44,7 +44,7 @@ require_once('conn.php');
                      <td>".$row['data_urodzenia']."</td>
                 <td>".$row['usun']."</td>
               <from action = 'delete.php' method ='post'?
-                <input type ='text' name = 'id' placeholder = 'usun' value='".$row["id_pracownicy"]."'
+                <input type ='text' name = 'id' placeholder = 'usun' value='".$row["id_pracownicy"]."'>
                 <input type ='submit' value='usun'>               
                 </from>
                  /td>");
