@@ -22,7 +22,7 @@
 </div>
 <?php
 require_once('conn.php');
-    
+    echo("<h1>1233445</h1>");
         $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql);
         echo("<hr />");
