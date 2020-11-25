@@ -30,7 +30,7 @@ function funkcja()
     }
 }
   funkcja();
-function robot($sql){
+function zadanie($sql){
   require_once('conn.php');
     $result=$conn->query($sql);
         echo("<table border=1>");
@@ -46,7 +46,7 @@ function robot($sql){
             }
         echo("</table>");
         }
-robot('SELECT * FROM pracownicy');
+zadanie('SELECT * FROM pracownicy');
   
   
 ?>
