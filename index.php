@@ -18,6 +18,7 @@
   <a class="nav_link" href="formularz.html">Formularze</a>
   <a class="nav_link" href="daneDoBazy.html">dane do bazy danych</a>
   <a class="nav_link" href="function.php">funkcja</a>
+  <a class="nav_link" href="delete.php">delete</a>
 </div>
 <?php
 require_once('conn.php');
