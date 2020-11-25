@@ -19,7 +19,7 @@
   <a class="nav_link" href="function.php">funkcja</a>
 </div>
 <?php
-?>
+
 require_once('conn.php');
       $sql=('DELETE * FROM pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql);
@@ -47,4 +47,4 @@ require_once('conn.php');
             }
         echo("</table>");
     echo("<hr />");
-  
+  ?>
