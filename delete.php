@@ -22,21 +22,32 @@
 
 
      <?php
+echo ("<h1>id: ".$_POST['id']."</h1>");
+require_once("conn.php");
 
- echo("<div id='okno1'>");
-        echo("<h2 class='h2strona'>Usunięto z bazy:");
-        echo("<h3 class='h3strona'>ID: ".$_POST['id']."</h3>");
+ $sql = "DELETE FROM pracownicy WHERE id_pracownicy='".$_POST['id']."'";
 
-	require_once("conn.php");
-	$sql = "DELETE FROM pracownicy WHERE id_pracownicy='".$_POST['id']."'";
-	if ($conn->query($sql) === TRUE) {
-        echo("<p class='precord'>  Record deleted successfully!</p>");
+if ($conn->query($sql) === TRUE) {
+        echo("<h1 class='precord'> Usunięto pracownika </h1>");
       } else {
-        echo("<p class='precord'>'Error: ' . $sql . '<br>' . $conn->error</p>");
+        echo("<h1 class='precord'>'Error: ' . $sql . '<br>' . $conn->error</h1>");
       }
-    echo("</div>");  
-	
-	header('Refresh: 5; url=https://index-a.herokuapp.com/index.php');
-	echo("<div class='redeem1'>Zostaniesz przekierowany na stronę !</div>");  
+   
+	    echo("<h1>Tabela  Pracowników:</h1>");
+$result = $conn->query('SELECT * FROM pracownicy,organizacja WHERE dzial = id_org');       
+        echo("<table>");      
+        echo("<th>ID</th>");
+        echo("<th>Imie</th>");
+        echo("<th>Dział</th>");
+        echo("<th>Zarobki</th>");
+        echo("<th>Data_Urodzenia</th>");
+        echo("<th>nazwa_dzialu</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+
+                echo("</tr>");
+            }
+        echo("</table>");
       
 ?>
