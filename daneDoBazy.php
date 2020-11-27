@@ -45,10 +45,10 @@ $result = $conn->query('SELECT * FROM pracownicy, organizacja WHERE dzial = id_o
         echo("<table>");      
         echo("<th>ID</th>");
         echo("<th>Imie</th>");
-        echo("<th>Dział</th>");
+        echo("<th>dzial</th>");
         echo("<th>Zarobki</th>");
-        echo("<th>Data_Urodzenia</th>");
-        echo("<th>Nazwa_Działu</th>");
+        echo("<th>data_Urodzenia</th>");
+        echo("<th>nazwa_Dzialu</th>");
         echo("<th>DELETE</th>");
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
