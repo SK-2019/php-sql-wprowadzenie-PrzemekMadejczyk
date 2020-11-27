@@ -47,8 +47,8 @@ $result = $conn->query('SELECT * FROM pracownicy, organizacja WHERE dzial = id_o
         echo("<th>Imie</th>");
         echo("<th>dzial</th>");
         echo("<th>Zarobki</th>");
-        echo("<th>data_Urodzenia</th>");
-        echo("<th>nazwa_Dzialu</th>");
+        echo("<th>data_urodzenia</th>");
+        echo("<th>nazwa_dzialu</th>");
         echo("<th>DELETE</th>");
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
