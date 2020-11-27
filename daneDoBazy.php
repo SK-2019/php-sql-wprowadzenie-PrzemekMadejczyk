@@ -53,9 +53,9 @@ $result = $conn->query('SELECT * FROM pracownicy, organizacja WHERE dzial = id_o
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
                     echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
-                       echo("<td><form action='delete.php' method=POST>");
-                     echo("<input type='hidden' <name='id' value='".$row['id_pracownicy']."'>");
-                     echo("<input type=submit value='Usun'>");;
+                          echo("<td><form action=delete.php method=POST>");    
+                          echo("<input type='hidden' name='id' value=".$row['id_pracownicy'].">");
+                           echo("<input type=submit value=usun>");
                     echo("</form></td>");
                 echo("</tr>");
             }
