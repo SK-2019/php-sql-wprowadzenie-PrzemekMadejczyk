@@ -48,5 +48,5 @@ $result = $conn->query('SELECT * FROM pracownicy, organizacja WHERE dzial = id_o
                 echo("</tr>");
             }
         echo("</table>");
- 
+  header("location:https://index-a.herokuapp.com/daneDoBazy.php");
 ?>
