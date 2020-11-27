@@ -21,35 +21,17 @@
 <?php
 
 require_once('conn.php');
-      $sql=('DELETE * FROM pracownicy,organizacja where dzial=id_org');
-    $result=$conn->query($sql);
-        echo("<hr />");
-        echo("<h3>Tabela Pracowników</h3>");
-        echo("<li> $sql");
-        echo("<table border=1>");
-        echo("<th>id</th>");
-        echo("<th>imię</th>");
-        echo("<th>dział</th>");
-        echo("<th>zarobki</th>");
-        echo("<th>nazwa działu</th>");
-        echo("<th>data urodzenia</th>");
-    echo("<th> usun </th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>".$row['id_pracownicy']."</td>
-                      <td>".$row['imie']."</td>
-                      <td>".$row['dzial']."</td>
-                    <td>".$row['zarobki']."</td>
-                  <td>".$row['nazwa_dzial']."</td>
-                     <td>".$row['data_urodzenia']."</td>
-//                          <td>".$row['usun']."</td>
-//               <from action = 'delete.php' method ='post'?
-//                 <input type ='text' name = 'id' placeholder = 'usun' value='".$row["id_pracownicy"]."'>
-//                 <input type ='submit' value='usun'>               
-//                 </from>
-                 /td>");
-                echo("</tr>");
-            }
-        echo("</table>");
-    echo("<hr />");
-  ?>
+     <?php
+
+  echo ("<h1>id: ".$_POST['id']."</h1>");
+require_once("connect.php");
+
+ $sql = "DELETE FROM pracownicy WHERE id_pracownicy='".$_POST['id']."'";
+
+if ($conn->query($sql) === TRUE) {
+        echo("<h1 class='precord'> Usunięto pracownika </h1>");
+      } else {
+        echo("<h1 class='precord'>'Error: ' . $sql . '<br>' . $conn->error</h1>");
+      }
+      
+?>
