@@ -16,7 +16,7 @@
   <a class="nav_link" href="index.php">strona głowna</a>
   <a class="nav_link" href="Data_czas.php">Data i czas</a>
   <a class="nav_link" href="formularz.html">Formularze</a>
-  <a class="nav_link" href="daneDoBazy.html">dane do bazy danych</a>
+  <a class="nav_link" href="daneDoBazy.php">dane do bazy danych</a>
   <a class="nav_link" href="function.php">funkcja</a>
   
 </div>
