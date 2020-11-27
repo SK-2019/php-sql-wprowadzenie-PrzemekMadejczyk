@@ -37,29 +37,27 @@
 
 <?php
 
-      $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
-    $result=$conn->query($sql);
-        echo("<hr />");
-        echo("<h3>Tabela Pracowników</h3>");
-        echo("<li> $sql");
-        echo("<table border=1>");
-        echo("<th>id</th>");
-        echo("<th>imię</th>");
-        echo("<th>dział</th>");
-        echo("<th>zarobki</th>");
-        echo("<th>nazwa działu</th>");
-        echo("<th>data urodzenia</th>");
-            while($row=$result->fetch_assoc()){
+     echo("<h1>Tabela Wszystkich Pracowników (z możliwością usuwania):</h1>");
+    require_once('conn.php');
+$result = $conn->query('SELECT * FROM pracownicy, organizacja WHERE dzial = id_org');       
+        echo("<table>");      
+        echo("<th>ID</th>");
+        echo("<th>Imie</th>");
+        echo("<th>Dział</th>");
+        echo("<th>Zarobki</th>");
+        echo("<th>Data_Urodzenia</th>");
+        echo("<th>Nazwa_Działu</th>");
+        echo("<th>DELETE</th>");
+            while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
-                    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
-                 echo("<td><form action='delete.php' method=POST>");
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+                    echo("<td><form action='delete.php' method=POST>");
                     echo("<input type='hidden' name='id' value='".$row['id_pracownicy']."'><input id='delemp1' type='submit' value='X'>");
                     echo("</form></td>");
-echo("</tr>");
+                echo("</tr>");
             }
         echo("</table>");
-    echo("<hr />");
-
+?>
 
 
 
