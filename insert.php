@@ -33,7 +33,7 @@ echo("<li>Data urodzenia: ".$_POST['data_ur']."</li>");
 
   require_once("conn.php");
 
-   $sql = "INSERT INTO pracownicy(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES(NULL,'".$_POST['imie']."', '".$_POST['dzial']."', '".$_POST['zarobki']."', '".$_POST['data_']."')";
+   $sql = "INSERT INTO pracownicy(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES(NULL,'".$_POST['imie']."', '".$_POST['dzial']."', '".$_POST['zarobki']."', '".$_POST['data_ur']."')";
    if ($conn->query($sql) === TRUE) {
     echo("<br>"); 
     echo "New record created successfully";
