@@ -23,15 +23,20 @@
 
      <?php
 
-  echo ("<h1>id: ".$_POST['id']."</h1>");
-require_once("conn.php");
+ echo("<div id='okno1'>");
+        echo("<h2 class='h2strona'>Usunięto z bazy:");
+        echo("<h3 class='h3strona'>ID: ".$_POST['id']."</h3>");
 
- $sql = "DELETE FROM pracownicy WHERE id_pracownicy='".$_POST['id']."'";
-
-if ($conn->query($sql) === TRUE) {
-        echo("<h1 class='precord'> Usunięto pracownika </h1>");
+	require_once("conn.php");
+	$sql = "DELETE FROM pracownicy WHERE id_pracownicy='".$_POST['id']."'";
+	if ($conn->query($sql) === TRUE) {
+        echo("<p class='precord'>  Record deleted successfully!</p>");
       } else {
-        echo("<h1 class='precord'>'Error: ' . $sql . '<br>' . $conn->error</h1>");
+        echo("<p class='precord'>'Error: ' . $sql . '<br>' . $conn->error</p>");
       }
+    echo("</div>");  
+	
+	header('Refresh: 5; url=https://index-a.herokuapp.com/index.php');
+	echo("<div class='redeem1'>Zostaniesz przekierowany na stronę !</div>");  
       
 ?>
