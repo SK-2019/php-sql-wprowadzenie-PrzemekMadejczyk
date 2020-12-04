@@ -22,7 +22,7 @@
 <?php
 require_once('conn.php');
 
-   $sql=('SELECT * FROM biblautor where dzial=id_org');
+   $sql=('SELECT * FROM biblautor');
    $result=$conn->query($sql);
         echo("<hr />");   
         echo("<li> $sql");
