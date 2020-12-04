@@ -33,4 +33,19 @@ echo("<table border=1>");
            echo("</tr>");
        }
    echo("</table>");
+
+   $sql=('SELECT * FROM bibl_tytul');
+   $result=$conn->query($sql);
+       echo("<hr />");
+       echo("<table border=1>");
+       echo("<th>id_tytul</th>");
+       echo("<th>tytul</th>");
+           while($row=$result->fetch_assoc()){
+               echo("<tr>");
+               echo("<td>".$row['id_tytul']."</td><td>".$row['tytul']."</td>");
+               echo("</tr>");
+           }
+       echo("</table>");
+   echo("<hr />");
+
   ?>
