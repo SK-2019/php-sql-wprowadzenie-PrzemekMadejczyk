@@ -54,7 +54,7 @@ echo("<table border=1>");
         echo("<th>tytul</th>");
         echo("<th>imie</th>");
         echo("<th>nazwisko</th>");
-        echo("<th>Usuń</th>");    
+           
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                 echo("<td>".$row['id']."</td><td>".$row['tytul']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td>");            
