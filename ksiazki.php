@@ -21,10 +21,7 @@
 </div>
 <?php
 require_once('conn.php');
-
-  $sql=('SELECT * FROM biblautor');
-   
-$result=$conn->query('SELECT * FROM biblAutor');
+$result=$conn->query('SELECT * FROM biblautor');
 echo("<table border=1>");
    echo("<th>id_autor</th>");
    echo("<th>imie</th>");
