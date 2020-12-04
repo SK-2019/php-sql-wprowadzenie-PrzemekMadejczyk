@@ -46,7 +46,7 @@ echo('<SELECT name= "title" id= "title">');
           
        }
    echo("</select>");
-   echo("<td><form action=wypzycenie.php method=POST>");
+   echo("<form action=wypzycenie.php method=POST>");
    echo("<input type='submit' value='submit'");
          echo("</form>")
      
