@@ -46,8 +46,9 @@ echo('<SELECT name= "title" id= "title">');
           
        }
    echo("</select>");
-
-         
+   echo("<td><form action=wypzycenie.php method=POST>");
+   echo("<input type='submit' value='submit'");
+         echo("</form>")
      
 
    $result=$conn->query('SELECT id_krzyz as id,tytul,imie,nazwisko FROM `bibl_krzyz`,bibl_tytul,biblautor where biblautor.id_autor=bibl_krzyz.id_autor and bibl_tytul.id_tytul=bibl_krzyz.id_tytul');
