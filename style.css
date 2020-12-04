@@ -20,12 +20,12 @@ td
 }
 th 
 {
-  background-color: red;
+  background-color: rgb(245, 232, 117);
   color: white;
 }
 .nav
 {
-    background:lightgreen;
+    background:rgb(218, 211, 125);
 }
 .nav_link
 {
