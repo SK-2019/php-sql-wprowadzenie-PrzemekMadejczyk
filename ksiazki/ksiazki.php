@@ -36,17 +36,18 @@ echo("<table border=1>");
 
    $sql=('SELECT * FROM bibl_tytul');
    $result=$conn->query($sql);
-       echo("<hr />");
-       echo("<table border=1>");
-       echo("<th>id_tytul</th>");
-       echo("<th>tytul</th>");
-           while($row=$result->fetch_assoc()){
-               echo("<tr>");
-               echo("<td>".$row['id_tytul']."</td><td>".$row['tytul']."</td>");
-               echo("</tr>");
-           }
-       echo("</table>");
    echo("<hr />");
+   echo("<h3>Biblioteka Tytul</h3>");
+   echo("<li>$sql");
+   echo("<select name='title' id='title'>");
+ 
+       while($row=$result->fetch_assoc()){
+          
+           echo("<option value=".$row['id'].">".$row['tytul']."</option>");
+         
+       }
+   echo("</select>");
+echo("<hr />")
 
    $result=$conn->query('SELECT id_krzyz as id,tytul,imie,nazwisko FROM `bibl_krzyz`,bibl_tytul,biblautor where biblautor.id_autor=bibl_krzyz.id_autor and bibl_tytul.id_tytul=bibl_krzyz.id_tytul');
         echo("<table border=1>");
