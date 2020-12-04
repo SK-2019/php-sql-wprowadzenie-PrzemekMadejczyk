@@ -52,7 +52,7 @@ echo('<SELECT name= "title" id= "title">');
 
    $result=$conn->query('SELECT id_krzyz as id,tytul,imie,nazwisko FROM `bibl_krzyz`,bibl_tytul,biblautor where biblautor.id_autor=bibl_krzyz.id_autor and bibl_tytul.id_tytul=bibl_krzyz.id_tytul');
         echo("<table border=1>");
-        echo("<h3>Poloczone </h3>");
+        echo("<h3>biblioteka autor i tytuł </h3>");
         echo("<th>id</th>");
         echo("<th>tytul</th>");
         echo("<th>imie</th>");
