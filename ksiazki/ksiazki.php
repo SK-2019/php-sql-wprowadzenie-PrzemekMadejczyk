@@ -37,13 +37,13 @@ echo("<table border=1>");
    $sql=('SELECT * FROM bibl_tytul');
    $result=$conn->query($sql);
    echo("<hr />");
-   echo("<h3>Biblioteka Tytul</h3>");
+   
    echo("<li>$sql");
    echo("<select name='title' id='title'>");
  
        while($row=$result->fetch_assoc()){
           
-           echo("<option value=".$row['id'].">".$row['tytul']."</option>");
+           echo("<option value=".$row['id_tytul'].">".$row['tytul']."</option>");
          
        }
    echo("</select>");
