@@ -38,7 +38,7 @@ echo("<table border=1>");
    $result=$conn->query($sql);
    echo("<hr />");
    echo("<h3>Biblioteka Tytul</h3>");
-   echo('<select name= "title" id= "title">');
+   echo('<SELECT name= "title" id= "title">');
  
        while($row=$result->fetch_assoc()){
           
