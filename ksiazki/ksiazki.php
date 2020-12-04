@@ -38,20 +38,17 @@ echo("<table border=1>");
    $result=$conn->query($sql);
    echo("<hr />");
    echo("<h3>Biblioteka Tytul</h3>");
-   echo("<li>$sql");
    echo("<select name='title' id='title'>");
  
        while($row=$result->fetch_assoc()){
           
-           echo("<option value=".$row['id'].">".$row['tytul']."</option>");
+           echo("<option value=".$row['id_tytul'].">".$row['tytul']."</option>");
           
        }
    echo("</select>");
 
          
-       }
-   echo("</select>");
-echo("<hr />")
+     
 
    $result=$conn->query('SELECT id_krzyz as id,tytul,imie,nazwisko FROM `bibl_krzyz`,bibl_tytul,biblautor where biblautor.id_autor=bibl_krzyz.id_autor and bibl_tytul.id_tytul=bibl_krzyz.id_tytul');
         echo("<table border=1>");
