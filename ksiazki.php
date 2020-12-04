@@ -23,7 +23,7 @@
 require_once('conn.php');
 
   $sql=('SELECT * FROM biblautor');
-   $result=$conn->query($sql);
+   
 $result=$conn->query('SELECT * FROM biblAutor');
    echo("<table border=2>");
    echo("<th>id_autor</th>");
