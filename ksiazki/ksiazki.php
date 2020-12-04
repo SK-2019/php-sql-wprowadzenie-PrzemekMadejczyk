@@ -29,7 +29,7 @@ echo('<SELECT name= "title" id= "title">');
 
     while($row=$result->fetch_assoc()){
        
-    echo("<option value=".$row['id_autor'].">".$row['imie'].$row['nazwisko']."</option>");
+echo("<option value=".$row['id_autor'].">".$row['imie'] .$row['nazwisko']."</option>");
        
     }
 echo("</select>");
