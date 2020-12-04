@@ -48,4 +48,17 @@ echo("<table border=1>");
        echo("</table>");
    echo("<hr />");
 
+   $result=$conn->query('SELECT id_krzyz as id,tytul,imie,nazwisko FROM `bibl_krzyz`,bibl_tytul,biblautor where biblautor.id_autor=bibl_krzyz.id_autor and bibl_tytul.id_tytul=bibl_krzyz.id_tytul');
+        echo("<table border=1>");
+        echo("<th>id</th>");
+        echo("<th>tytul</th>");
+        echo("<th>imie</th>");
+        echo("<th>nazwisko</th>");
+        echo("<th>Usuń</th>");    
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                echo("<td>".$row['id']."</td><td>".$row['tytul']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td>");            
+                echo("</tr>");
+            }
+        echo("</table>");
   ?>
