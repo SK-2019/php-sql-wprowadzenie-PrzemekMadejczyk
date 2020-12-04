@@ -32,7 +32,7 @@ $result=$conn->query('SELECT * FROM biblAutor');
 
        while($row=$result->fetch_assoc()){
            echo("<tr>");
-               echo("<td>" .$row["id"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["nazwisko"]. "</td>");
+               echo("<td>" .$row["id_autor"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["nazwisko"]. "</td>");
            echo("</tr>");
        }
    echo("</table>");
