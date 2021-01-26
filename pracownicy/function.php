@@ -38,10 +38,10 @@ function zadanie($sql){
         echo("<th>id</th>");
         echo("<th>imię</th>");
         echo("<th>dział</th>");
-        echo("<th>zarobki</th>");
+        echo("<th>zarobki2</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki2"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
