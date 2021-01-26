@@ -19,7 +19,7 @@
   <a class="nav_link" href="index.php">strona głowna</a>
 </div>
 <?php
-require_once('/conn.php');
+require_once('conn.php');
        echo("<hr>");
                 echo("<h3>zadanie 1</h3>");
                 echo("<h3>Wiek poszczególnych pracowników (w latach)</h3>");

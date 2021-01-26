@@ -20,7 +20,7 @@
   
 </div>
 <?php
-require_once('/conn.php');
+require_once('conn.php');
 $sql=('SELECT * FROM biblautor');
 $result=$conn->query($sql);
 echo("<hr />");

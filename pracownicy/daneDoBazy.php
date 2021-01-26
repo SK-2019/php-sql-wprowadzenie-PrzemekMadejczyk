@@ -40,7 +40,7 @@
 <?php
 
      echo("<h1>Tabela Pracownków (usun)</h1>");
-    require_once('/conn.php');
+    require_once('conn.php');
 $result = $conn->query('SELECT * FROM pracownicy, organizacja WHERE dzial = id_org');       
         echo("<table>");      
         echo("<th>ID</th>");

@@ -22,7 +22,7 @@
 <h2>Funkcje Agregujące</h2>  
 <?php
           echo("<hr />");
-      require_once('/conn.php');
+      require_once('conn.php');
     
             
            
