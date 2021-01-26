@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<link rel="stylesheet" href="style.css">
   </form
 </head>
-  <link rel="stylesheet" href="style.css">
+  
 <body>
 <strong><a href="https://github.com/SK-2019/php-sql-wprowadzenie-PrzemekMadejczyk">Github</a></strong>
 <h1>Przemek Madejczyk 2ti 20</h1>
