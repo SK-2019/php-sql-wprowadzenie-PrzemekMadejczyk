@@ -4,7 +4,7 @@
 
   </form
 </head>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/style.css">
 <body>
 <strong><a href="https://github.com/SK-2019/php-sql-wprowadzenie-PrzemekMadejczyk">Github</a></strong>
 <h1>Przemek Madejczyk 2ti 20</h1>
@@ -20,7 +20,7 @@
 </div>
 <?php
    echo ("<h1>id: ".$_POST['id']."</h1>");
-require_once("../assetsconn.php");
+require_once("../assets/conn.php");
 
  $sql = "DELETE FROM pracownicy WHERE id_pracownicy='".$_POST['id']."'";
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 <strong><a href="https://github.com/SK-2019/php-sql-wprowadzenie-PrzemekMadejczyk">Github</a></strong>
@@ -22,7 +22,7 @@
 <h2>Funkcje Agregujące</h2>  
 <?php
           echo("<hr />");
-      require_once('../assetsconn.php');
+      require_once('../assets/conn.php');
     
             
            
