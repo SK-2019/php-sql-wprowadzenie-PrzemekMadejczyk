@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <strong><a href="https://github.com/SK-2019/php-sql-wprowadzenie-PrzemekMadejczyk">Github</a></strong>
@@ -19,7 +19,7 @@
     <h1>Pracownicy</h1>
 <?php
         echo("<hr />");
-    require_once('conn.php');;
+    require_once('../assetsconn.php');;
    
      $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2');
         $result=$conn->query($sql); //mysql
