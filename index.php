@@ -32,7 +32,7 @@ require_once('../assets/conn.php');
         echo("<th>id</th>");
         echo("<th>imię</th>");
         echo("<th>dział</th>");
-        echo("<th>zarobki</th>");
+        echo("<th>zarobki1</th>");
         echo("<th>nazwa działu</th>");
         echo("<th>data urodzenia</th>");
             while($row=$result->fetch_assoc()){
