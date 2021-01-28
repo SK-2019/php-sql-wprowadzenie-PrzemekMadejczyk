@@ -14,6 +14,10 @@ table, th, td
 table 
 {
   width: 20%;
+  border-collapse: collapse;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 table
 {
