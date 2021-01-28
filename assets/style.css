@@ -28,6 +28,9 @@ th
 .nav
 {
     background:rgb(218, 211, 125);
+    position :fixed; 
+    height: 100%; 
+    width: 250px;
 }
 .nav_link
 {
