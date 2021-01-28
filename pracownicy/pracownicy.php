@@ -4,6 +4,8 @@
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
+<div class="con">
+
 <strong><a href="https://github.com/SK-2019/php-sql-wprowadzenie-PrzemekMadejczyk">Github</a></strong>
 <h1>Przemek Madejczyk 2ti 20</h1>
 <div class="nav">
@@ -140,5 +142,6 @@
             echo("<hr />");
     
     
-    
+            
         ?>
+</div>
