@@ -19,7 +19,7 @@
     <a class="nav_link" href="pracownicy/Data_czas.php">Data i czas</a>
     <a class="nav_link" href="cwiczenia/formularz.html">Formularze</a>
     <a class="nav_link" href="pracownicy/daneDoBazy.php">dane do bazy danych</a>
-    <a class="nav_link" href="function.php">funkcja</a>
+    <a class="nav_link" href="cwiczenia/function.php">funkcja</a>
     <a class="nav_link" href="ksiazki/ksiazki.php"><b>Książki</b></a>
   
 </div>
