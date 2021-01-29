@@ -18,7 +18,7 @@
   <a class="nav_link" href="cwiczenia/formularz.html">Formularze</a>
   <a class="nav_link" href="daneDoBazy.php">dane do bazy danych</a>
   <a class="nav_link" href="cwiczenia/function.php">funkcja</a>
-  <a class="nav1" href="../ksiazki/ksiazki.php"><b>Książki</b>
+  <a class="nav_link" href="../ksiazki/ksiazki.php"><a>Książki</a>
 </div>
 <?php
    echo ("<h1>id: ".$_POST['id']."</h1>");
