@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Przemek Madejczyk 2Ti Gr2</title>
 <link rel="stylesheet" href="assets/style.css">
   </form>
 </head>

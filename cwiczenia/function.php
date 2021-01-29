@@ -2,8 +2,9 @@
 <html>
 <head>
 
-  </form
+  </form>
 </head>
+<title>Przemek Madejczyk 2Ti Gr2</title>
   <link rel="stylesheet" href="style.css">
 <body>
 <strong><a href="https://github.com/SK-2019/php-sql-wprowadzenie-PrzemekMadejczyk">Github</a></strong>

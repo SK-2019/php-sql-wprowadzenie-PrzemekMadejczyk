@@ -3,6 +3,7 @@
 <head>
 <link rel="stylesheet" href="../assets/style.css">
 </head>
+<title>Przemek Madejczyk 2Ti Gr2</title>
 <body>
 <div class="con">
 
