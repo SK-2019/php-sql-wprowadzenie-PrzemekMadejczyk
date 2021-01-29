@@ -1,4 +1,54 @@
 
+ hr {
+  border: 2px solid black;
+}
+h1 {
+  font-size:40px; 
+  margin: 20px auto;
+  font-family:helvetica; 
+  text-align:center;
+}
+th {
+  margin: 20px auto;
+  font-family:helvetica; 
+  text-align:center;
+}
+td {
+  margin: 20px auto;
+  font-family:helvetica; 
+  text-align:center;
+}
+table {
+  margin: 20px auto;
+  font-family:helvetica; 
+  text-align:center;
+}
+h3 {
+  margin: 20px auto;
+  font-family:helvetica; 
+  text-align:center;
+}
+li {
+  margin: 20px auto;
+  font-family:helvetica; 
+  text-align:center;
+}
+a {
+  color: yellow;
+  text-decoration: none;
+}
+/* .nav_link{
+  color: lightgreen;
+} */
+h2 {
+  margin: 20px auto;
+  font-family:helvetica; 
+  text-align:center;
+}
+form {
+  font-family:helvetica; 
+  text-align:center;
+}
 *{
   margin :0;
   padding: 0;
@@ -11,6 +61,7 @@ table, th, td
 {
   border: 1px solid green;
 }
+/*
 table 
 {
   width: 20%;
@@ -27,6 +78,7 @@ table
   flex-direction: column;
   align-items: center;
 }
+*/
 td 
 {
   text-align: center;
