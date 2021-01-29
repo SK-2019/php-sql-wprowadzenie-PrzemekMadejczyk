@@ -15,9 +15,9 @@
     <a class="nav_link" href="pracownicy i organizacja.php">Pracownicy i Organizacja</a>
   
   <a class="nav_link" href="Data_czas.php">Data i czas</a>
-  <a class="nav_link" href="cwiczenia/formularz.html">Formularze</a>
+  <a class="nav_link" href="../cwiczenia/formularz.html">Formularze</a>
   <a class="nav_link" href="daneDoBazy.php">dane do bazy danych</a>
-  <a class="nav_link" href="cwiczenia/function.php">funkcja</a>
+  <a class="nav_link" href="../cwiczenia/function.php">funkcja</a>
   <a class="nav_link" href="../ksiazki/ksiazki.php"><b>Książki</b></a>
 </div>
 </head>
