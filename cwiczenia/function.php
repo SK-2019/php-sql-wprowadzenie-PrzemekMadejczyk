@@ -6,6 +6,7 @@
 </head>
 <title>Przemek Madejczyk 2Ti Gr2</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <link rel="icon" href="https://www.instalki.pl/images/newsy/01-2021/pogchamp_emote.png" type="image/icon type">
 <body>
 <strong><a href="https://github.com/SK-2019/php-sql-wprowadzenie-PrzemekMadejczyk">Github</a></strong>
 <h1>Przemek Madejczyk 2ti 20</h1>

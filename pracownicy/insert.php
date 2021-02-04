@@ -8,6 +8,7 @@
   </form
 </head>
   <link rel="stylesheet" href="../assets/style.css">
+  <link rel="icon" href="https://www.instalki.pl/images/newsy/01-2021/pogchamp_emote.png" type="image/icon type">
 <body>
 
 <h1>Przemek Madejczyk 2ti 20</h1>

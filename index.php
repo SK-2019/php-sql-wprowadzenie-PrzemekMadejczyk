@@ -2,9 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<from>
 <title>Przemek Madejczyk 2Ti Gr2</title>
 <link rel="stylesheet" href="assets/style.css">
-  </form>
+<link rel="icon" href="https://www.instalki.pl/images/newsy/01-2021/pogchamp_emote.png" type="image/icon type">
+  </from>
 </head>
   
 <body>
