@@ -13,7 +13,7 @@
 
 <h1>Przemek Madejczyk 2ti 20</h1>
 <div class="nav">
-<a class ="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-PrzemekMadejczyk">Github</a>
+<a class ="nav_link" href="https://www.pinclipart.com/picdir/middle/104-1042073_variety-of-services-money-bag-icon-png-clipart.png">Github</a>
     <a class="nav_link" href="index.php">strona głowna</a>
     <a class="nav_link" href="pracownicy/pracownicy.php">Pracownicy - wstęp</a>
     <a class="nav_link" href="pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
