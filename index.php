@@ -25,5 +25,6 @@
     <a class="nav_link" href="ksiazki/ksiazki.php"><b>Książki</b></a>
 <a class="nav_link" href="><b>flexbox</b>flexbox</a>  
 </div>
-
-
+<?php
+ require_once('assets/conn.php');
+?>
