@@ -26,7 +26,7 @@
     <h1>Pracownicy</h1>
 <?php
         echo("<hr />");
-    require_once('../assets/conn.php');;
+    require_once('../assets/conn.php');
    
      $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2');
         $result=$conn->query($sql); //mysql
