@@ -11,7 +11,7 @@
   
 <body>
 
-<h1>Przemek Madejczyk 2ti 20</h1>
+<h1>Przemek Madejczyk 112ti 20</h1>
 <div class="nav">
 <a class ="nav_link" href="https://www.pinclipart.com/picdir/middle/104-1042073_variety-of-services-money-bag-icon-png-clipart.png">Github</a>
     <a class="nav_link" href="index.php">strona głowna</a>
