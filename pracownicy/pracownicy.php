@@ -87,7 +87,7 @@
         $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
         $result=$conn->query($sql);
             
-            echo("<h3>Tabela Pracowników</h3>");
+            
             echo("<li>SQL:  $sql ");
             echo("<table border=1>");
             echo("<th>id</th>");
