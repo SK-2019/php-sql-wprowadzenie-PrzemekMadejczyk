@@ -20,7 +20,10 @@ table{
   justify-content: center;
   display: flex;
 }
+li{
+  text-align: center;
 
+}
 th, td{
   padding: 15px;
   text-align: center;
