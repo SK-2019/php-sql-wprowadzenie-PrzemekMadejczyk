@@ -9,7 +9,7 @@ body
 td{
   text-align: center;
   background-color: lightslategray;
-  color:blaCK;
+  /* color:blaCK; */
 }
 th {
   background-color: gainsboro;
@@ -31,7 +31,7 @@ li{
 th, td{
   padding: 15px;
   text-align: center;
-  font-size: 1em;
+ 
   
 }
 .nav
