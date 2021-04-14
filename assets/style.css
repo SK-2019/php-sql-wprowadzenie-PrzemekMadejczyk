@@ -21,7 +21,7 @@ table, th, td {
   /* border-collapse: collapse; */
 }
 table{
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   justify-content: center;
   display: flex;
 }
