@@ -7,8 +7,6 @@
 <title>Przemek Madejczyk 2Ti Gr2</title>
 <body>
 <div class="con">
-
-<
 <h1>Przemek Madejczyk 2ti 20</h1>
 <div class="nav">
 <a class ="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-PrzemekMadejczyk">Github</a>
@@ -27,8 +25,7 @@
     <h1>Pracownicy</h1>
 <?php
         echo("<hr />");
-      require_once('../assets/conn.php');
-   
+      require_once('../assets/conn.php');  
      $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2');
         $result=$conn->query($sql); //mysql
         echo("<table border=1>");
@@ -45,7 +42,7 @@
                 echo("</tr>");
             }
         echo("</table>");
-        echo("<hr />");
+        
 
       
      $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2');
