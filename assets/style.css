@@ -7,29 +7,25 @@
 body
 {
   background-color:  lightgray;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-table, th, td 
-{
-  border: 1px solid green;
-}
-table 
-{
-  width: 20%;
+table, th, td {
+  
   border-collapse: collapse;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
+}
+table{
+  border-collapse: collapse;
   justify-content: center;
+  display: flex;
 }
 
-td 
-{
+th, td{
+  padding: 15px;
   text-align: center;
-}
-th 
-{
-  background-color: rgb(253, 245, 175);
-  color: rgb(73, 72, 72);
+  font-size: 1em;
+  border: 1px solid black;
 }
 .nav
 {
