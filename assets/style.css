@@ -19,15 +19,9 @@ table
   display:flex;
   flex-direction: column;
   align-items: center;
-  
+  justify-content: center;
 }
-table
-{
-  border-collapse: collapse;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 td 
 {
   text-align: center;
