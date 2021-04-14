@@ -17,6 +17,10 @@ td{
   background-color: lightslategray;
   color:blaCK;
 }
+th {
+  background-color: gainsboro;
+  
+}
 table, th, td {
   
   border-collapse: collapse;
