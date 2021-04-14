@@ -88,6 +88,15 @@
     align-items: flex-end;
     justify-content: flex-end;;
 }
+.nav1 {
+    background-color: pink;
+    width: 500px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .menu4{
     display: inline-block;
   border-radius: 4px;
