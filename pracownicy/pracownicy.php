@@ -24,7 +24,7 @@
 
     <h1>Pracownicy</h1>
 <?php
-        echo("<hr />");
+        
       require_once('../assets/conn.php');  
      $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2');
         $result=$conn->query($sql); //mysql
@@ -61,7 +61,7 @@
                 echo("</tr>");
             }
         echo("</table>");
-        echo("<hr />");
+        
         
        
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and zarobki<30');
@@ -80,7 +80,7 @@
                 echo("</tr>");
             }
         echo("</table>");
-        echo("<hr />");
+        
 
         $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
         $result=$conn->query($sql);                   
@@ -98,7 +98,7 @@
                     echo("</tr>");
                 }
             echo("</table>");
-        echo("<hr />");
+        
       
      
             
@@ -119,7 +119,7 @@
                     echo("</tr>");
                 }
             echo("</table>");
-            echo("<hr />");
+            
             
           
       $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and zarobki<30');
@@ -139,7 +139,7 @@
                     echo("</tr>");
                 }
             echo("</table>");
-            echo("<hr />");
+           
     
     
             
