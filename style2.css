@@ -37,3 +37,27 @@
     text-decoration: none;
     color: brown; 
 }
+.container2 {
+    background-color: red;
+    width: 60%;
+    height: 550px;
+    margin: 15px;
+}
+.menu2 {
+    padding: 0.5rem;
+    margin: 1px;
+    background-color: green;
+    text-decoration: none;
+    color: brown;
+    transition: 0.5s;
+}
+
+.menu2:hover {
+    padding: 0.5rem;
+    margin: 1px;
+    background-color: greenyellow;
+    text-decoration: none;
+    color: darkblue; 
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
