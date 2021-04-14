@@ -62,7 +62,7 @@
 }
 .container3 {
     background-color: gray;;
-    width: 70%;
+    width: 60%;
     height: 550px;;
     margin: 15px;
     display: flex;
@@ -81,7 +81,7 @@
 }
 .container4 {
     background-color: gray;;
-    width: 70%;
+    width: 60%;
     height: 550px;;
     margin: 15px;
     display: flex;
@@ -97,7 +97,7 @@
   text-align: center;
   font-size: 28px;
   padding: 1rem;
-  width: 100px;
+  /* width: 100px; */
   transition: all 0.5s;
   cursor: pointer;
   margin: 1px;
@@ -110,15 +110,15 @@
     transition: 0.5s;
   }
   .menu4 span:after {
-    content: '00bb';
+    content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
-    right: -15px;
+    right: -25px;
     transition: 0.5s;
   }
 .menu4:hover span {
-    padding-right: 20px;
+    padding-right: 25px;
   }
   .menu4 :hover span:after {
     opacity: 1;
