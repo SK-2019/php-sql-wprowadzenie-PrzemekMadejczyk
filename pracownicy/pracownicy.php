@@ -88,7 +88,7 @@
         $result=$conn->query($sql);
             echo("<hr />");
             echo("<h3>Tabela Pracowników</h3>");
-            echo("<li> $sql");
+            echo("<li>SQL:  $sql ");
             echo("<table border=1>");
             echo("<th>id</th>");
             echo("<th>imię</th>");
@@ -110,7 +110,7 @@
             $result=$conn->query($sql);
             
             echo("<table border=1>");
-      echo("<li>SQL: $sql");
+            echo("<li>SQL:  $sql ");
             echo("<th>id</th>");
             echo("<th>imie</th>");
             echo("<th>dzial</th>");
@@ -130,7 +130,7 @@
       $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and zarobki<30');
             $result=$conn->query($sql);
             echo("<table border=1>");
-        echo("<li>SQL: $sql");
+            echo("<li>SQL:  $sql ");
             echo("<th>id</th>");
             echo("<th>imie</th>");
             echo("<th>dzial</th>");
