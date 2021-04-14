@@ -23,6 +23,7 @@
   <a class="nav_link" href="../cwiczenia/function.php">funkcja</a>
   <a class="nav_link" href="ksiazki/ksiazki.php"><b>Książki</b></a>
 </div>
+
     <h1>Pracownicy</h1>
 <?php
         echo("<hr />");
