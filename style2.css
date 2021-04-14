@@ -51,13 +51,12 @@
     background-color: yellowgreen;
     text-decoration: none;
     color: darkblue;
-    transition: 0.5s;
+    transition-duration: 0.4s;
 }
 
 .menu2:hover {
     padding: 1rem;
     margin: 1px;
-    background-color: yellowgreen;
-    text-decoration: none;
-    color: darkblue; 
+    background-color: #4CAF50; /* Green */
+  color: white;
 }
