@@ -84,12 +84,11 @@
             }
         echo("</table>");
         echo("<hr />");
+
         $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
-        $result=$conn->query($sql);
-            
-            
-            echo("<li>SQL:  $sql ");
+        $result=$conn->query($sql);                   
             echo("<table border=1>");
+            echo("<li>SQL: $sql");
             echo("<th>id</th>");
             echo("<th>imię</th>");
             echo("<th>dział</th>");
@@ -107,8 +106,7 @@
      
             
             $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2 or dzial=3');
-            $result=$conn->query($sql);
-            
+            $result=$conn->query($sql);            
             echo("<table border=1>");
             echo("<li>SQL:  $sql ");
             echo("<th>id</th>");
