@@ -140,4 +140,3 @@
             echo("</table>");
             echo("<hr />");
         ?>
-</div>
