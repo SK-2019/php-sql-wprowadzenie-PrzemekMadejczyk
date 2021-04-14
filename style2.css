@@ -44,20 +44,19 @@
     margin: 15px;
 }
 .menu2 {
-    padding: 0.5rem;
+    padding: 0.75rem;
     margin: 1px;
-    background-color: green;
+    background-color: yellowgreen;
     text-decoration: none;
-    color: brown;
+    color: darkblue;
     transition: 0.5s;
 }
 
 .menu2:hover {
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 1px;
-    background-color: greenyellow;
+    background-color: yellowgreen;
     text-decoration: none;
     color: darkblue; 
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+}
 }
