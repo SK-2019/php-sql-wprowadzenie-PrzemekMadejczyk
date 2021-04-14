@@ -43,7 +43,7 @@
     height: 550px;
     margin: 15x;
     display: flex;
-    justify-content: flex-end;;
+    justify-content: flex-end;
 }
 .menu2 {
     padding: 0.75rem;
@@ -61,17 +61,17 @@
   color: white;
 }
 .container3 {
-    background-color: gray;
-    width: 60%;
-    height: 550px;
-    margin: 15x;
+    background-color: gray;;
+    width: 70%;
+    height: 550px;;
+    margin: 15px;
     display: flex;
-    justify-content: flex-end;;
+    align-items: flex-end;
 }
 .menu3 {
     padding: 0.75rem;
     margin: 1px;
-   
+    background-color: yellow;
 }
 
 .menu3:hover {
@@ -79,3 +79,33 @@
     margin: 1px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+.container4 {
+    background-color: gray;;
+    width: 70%;
+    height: 550px;;
+    margin: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;;
+}
+.menu4 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .menu4 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+.menu4:hover span {
+    padding-right: 25px;
+  }
+  .menu4 :hover span:after {
+    opacity: 1;
+    right: 0;
+  }
