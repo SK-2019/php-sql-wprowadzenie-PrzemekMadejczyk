@@ -7,14 +7,14 @@
 
 .nav {
     background-color: pink;
-    width: 250px;
+    width: 450px;
     height: 250px;
     margin: 105x;
 }
 
 .nav1 {
     background-color: pink;
-    width: 300px;
+    width: 400px;
     height: 150px;
     margin: 10px;
     display: flex;
