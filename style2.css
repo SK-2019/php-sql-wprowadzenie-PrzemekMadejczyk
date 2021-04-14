@@ -1,0 +1,23 @@
+.container {
+    background-color: red;
+    width: 60%;
+    height: 550px;
+    margin: 15px;
+}
+
+.nav {
+    background-color: pink;
+    width: 250px;
+    height: 250px;
+    margin: 105x;
+}
+
+.nav1 {
+    background-color: pink;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
