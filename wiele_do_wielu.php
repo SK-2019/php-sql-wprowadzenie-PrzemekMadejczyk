@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,8 +23,19 @@
     <a class="nav_link" href="cwiczenia/function.php">funkcja</a>
     <a class="nav_link" href="ksiazki/ksiazki.php"><b>Książki</b></a>
     <a class="nav_link" href="flexbox.html"><b>flexbox</b></a>
-    <a class="nav_link" href="wiele_do_wielu"><b>wile_do_wielu</b></a>
 </div>
 <?php
  require_once('assets/conn.php');
+ $result = $conn->query("SELECT * FROM biblioteka");
+
+ echo("<table border=1>");
+     echo("<th>ID</th>");
+     echo("<th>Tytuł</th>");
+     echo("<th>Autor</th>");
+     while($row = $result->fetch_assoc()){
+         echo("<tr>");
+             echo("<td>".$row['id']."</td><td>".$row['tytul']."</td><td>".$row['autor']."</td>");
+         echo("</tr>");
+     }
+ echo("</table>");
 ?>
