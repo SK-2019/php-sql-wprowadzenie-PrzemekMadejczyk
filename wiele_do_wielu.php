@@ -28,7 +28,6 @@
  require_once("assets/conn.php");
  $sql="Select * from autor, tytul, autor_tytul where autor.id=autor_id and tytul.id=tytul_id";
  $result=$conn->query($sql);
- echo("<h2> Zad 1 ".$sql."</h2>");
  echo("<table border=1>");
  echo("<th>Nazwisko</th>");
  echo("<th>Tytul</th>");
@@ -39,16 +38,5 @@
  echo("</table>");
 
  
- $result = $conn->query("SELECT * FROM biblioteka");
-
- echo("<table border=1>");
-     echo("<th>ID</th>");
-     echo("<th>Tytuł</th>");
-     echo("<th>Autor</th>");
-     while($row = $result->fetch_assoc()){
-         echo("<tr>");
-             echo("<td>".$row['id']."</td><td>".$row['tytul']."</td><td>".$row['autor']."</td>");
-         echo("</tr>");
-     }
- echo("</table>");
+ 
 ?>
