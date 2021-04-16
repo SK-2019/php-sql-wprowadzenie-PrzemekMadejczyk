@@ -37,6 +37,15 @@
              echo("</tr>");}
  echo("</table>");
 
- 
+        $sql="Select * from autor";
+        $result=$conn->query($sql);     
+        echo("<table border=1>");
+        echo("<th>id</th>");
+        echo("<th>Nazwisko</th>");
+                while($row=$result->fetch_assoc()){
+                    echo("<tr>");
+                        echo("<td>".$row["id"]."</td><td>".$row["nazwisko"]."</td>");
+                    echo("</tr>");}
+        echo("</table>"); 
  
 ?>
