@@ -1,5 +1,5 @@
 <ul class="nav">
-<a class ="nav_link" href="https://www.streamscheme.com/wp-content/uploads/2020/04/pepega.png">Github</a>
+<a class ="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-PrzemekMadejczyk">Github</a>
      <li class="nav_item"><a href="/index.php">strona główna</a></li>
      <li class="nav_item"><a href="/pracownicy/pracownicy.php">Pracownicy - wstęp</a></li>
      <li class="nav_item"><a href="/pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a></li>
