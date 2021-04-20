@@ -10,8 +10,6 @@
 </head>
 <body>
 <h1>Przemek Madejczyk 2ti 20</h1>
-<div class="nav">
-<body>
     <div class="container">
       <div class="header">
         <?php include("header.php"); ?>
