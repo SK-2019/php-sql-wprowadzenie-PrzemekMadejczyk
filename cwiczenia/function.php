@@ -8,18 +8,17 @@
   <link rel="stylesheet" href="../assets/style.css">
   <link rel="icon" href="https://www.pinclipart.com/picdir/middle/104-1042073_variety-of-services-money-bag-icon-png-clipart.png" type="image/icon type">
 <body>
-<strong><a href="https://github.com/SK-2019/php-sql-wprowadzenie-PrzemekMadejczyk">Github</a></strong>
-<h1>Przemek Madejczyk 2ti 20</h1>
-<div class="nav">
-    <a class="nav_link" href="../index.php">strona głowna</a>
-    <a class="nav_link" href="../pracownicy/pracownicy.php">Pracownicy - wstęp</a>
-    <a class="nav_link" href="../pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
-    <a class="nav_link" href="../pracownicy/pracownicy i organizacja.php">Pracownicy i Organizacja</a>
-    <a class="nav_link" href="../pracownicy/Data_czas.php">Data i czas</a>
-    <a class="nav_link" href="/formularz.html">Formularze</a>
-    <a class="nav_link" href="../pracownicy/daneDoBazy.html">dane do bazy danych</a>
-    <a class="nav_link" href="/function.php">funkcja</a>
-</div>
+<div class="container">
+      <div class="header">
+        <?php include("header.php"); ?>
+      </div>
+      <div class="menu">
+      <?php include("../menu.php"); ?>
+      </div>
+      <div class="main"></div>
+    </div>
+  </body>
+</html>
 <?php
 
 
