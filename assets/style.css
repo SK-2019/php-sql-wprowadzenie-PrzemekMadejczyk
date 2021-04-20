@@ -41,6 +41,7 @@ th, td{
 .nav
 {
     background:rgb(218, 211, 125);
+    color:red;
     position :fixed; 
     height: 100%; 
     width: 250px;
