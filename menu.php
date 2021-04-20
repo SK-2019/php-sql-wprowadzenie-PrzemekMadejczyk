@@ -10,5 +10,6 @@
      <a class ="nav_link" href="/cwiczenia/function.php">funkcja</a>
      <a class ="nav_link"  href="/ksiazki/ksiazki.php">Książki</a>
      <a class ="nav_link"  href="/flexbox/flexbox.html">Flexbox</a>
-     <a class ="nav_link"  href="/wiele_do_wielu.php">wiele_do_wielu</a>
-</ul>
+     <a class ="nav_link"  href="/wiele_do_wielu.php">autor_tytul</a>
+     <a class ="nav_link"  href="https://www.notion.so/SQL-3ccfadeab4b84d7794d7a13966de2547">Notion </a>
+    </ul>

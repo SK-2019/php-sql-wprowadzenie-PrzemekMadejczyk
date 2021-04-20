@@ -5,19 +5,7 @@
   </form>
 </head>
 <title>Przemek Madejczyk 2Ti Gr2</title>
-  <link rel="stylesheet" href="../assets/style.css">
-  <link rel="icon" href="https://www.pinclipart.com/picdir/middle/104-1042073_variety-of-services-money-bag-icon-png-clipart.png" type="image/icon type">
-<body>
-
-<div class="container">
-    <div class="header">
-        
-        <?php include("../header.php"); ?>
-    </div>
-    <div class="menu">
-    <?php include("../menu.php"); ?>
-    </div>
-    <div class="main">
+  
 <?php
    echo ("<h1>id: ".$_POST['id']."</h1>");
 require_once("../assets/conn.php");
