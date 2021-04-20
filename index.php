@@ -2,14 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<from>
-
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <link rel="stylesheet" href="assets/style.css">
-<link rel="icon" href="https://www.streamscheme.com/wp-content/uploads/2020/04/pepega.png" type="image/icon type">
-  </from>
+<link rel="icon" href="https://www.streamscheme.com/wp-content/uploads/2020/04/pepega.png" type="image/icon type"> 
 </head>
 <body>
-<h1>Przemek Madejczyk 2ti 20</h1>
     <div class="container">
       <div class="header">
         <?php include("header.php"); ?>
