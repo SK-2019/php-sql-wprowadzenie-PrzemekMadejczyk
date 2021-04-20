@@ -10,16 +10,14 @@
 <body>
 
 <div class="container">
-      <div class="header">
-        <?php include("header.php"); ?>
-      </div>
-      <div class="menu">
-      <?php include("../menu.php"); ?>
-      </div>
-      <div class="main"></div>
+    <div class="header">
+        
+        <?php include("../header.php"); ?>
     </div>
-  </body>
-</html>
+    <div class="menu">
+    <?php include("../menu.php"); ?>
+    </div>
+    <div class="main">
 
 <form class="formularz" action="insert.php" method="POST">
    <input type="text" name="imie" placeholder="Imie">

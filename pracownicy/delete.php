@@ -10,16 +10,14 @@
 <body>
 
 <div class="container">
-      <div class="header">
-        <?php include("header.php"); ?>
-      </div>
-      <div class="menu">
-      <?php include("../menu.php"); ?>
-      </div>
-      <div class="main"></div>
+    <div class="header">
+        
+        <?php include("../header.php"); ?>
     </div>
-  </body>
-</html>
+    <div class="menu">
+    <?php include("../menu.php"); ?>
+    </div>
+    <div class="main">
 <?php
    echo ("<h1>id: ".$_POST['id']."</h1>");
 require_once("../assets/conn.php");
