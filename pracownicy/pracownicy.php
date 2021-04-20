@@ -11,7 +11,7 @@
         <?php include("header.php"); ?>
       </div>
       <div class="menu">
-      <?php include("menu.php"); ?>
+      <?php include("../menu.php"); ?>
       </div>
       <div class="main"></div>
     </div>
