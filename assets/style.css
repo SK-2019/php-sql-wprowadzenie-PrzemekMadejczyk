@@ -20,8 +20,7 @@ hr {
 }
 table, th, td {
   
-  border: 4px solid black;
-  /* border-collapse: collapse; */
+   border-collapse: collapse; 
 }
 table{
   border-collapse: collapse; 
