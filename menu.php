@@ -7,7 +7,6 @@
      <a class ="nav_link"  href="/pracownicy/Data_czas.php">Data i czas</a>
      <a class ="nav_link"  href="/cwiczenia/formularz.html">Formularze</a>
      <a class ="nav_link"  href="/pracownicy/daneDoBazy.php">dane do bazy danych</a>
-     <a class ="nav_link" href="/cwiczenia/function.php">funkcja</a>
      <a class ="nav_link"  href="/ksiazki/ksiazki.php">Książki</a>
      <a class ="nav_link"  href="/flexbox/flexbox.html">Flexbox</a>
      <a class ="nav_link"  href="/wiele_do_wielu/wiele_do_wielu.php">autor_tytul</a>
