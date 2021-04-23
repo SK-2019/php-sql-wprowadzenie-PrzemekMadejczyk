@@ -48,6 +48,12 @@ function zadanie($sql){
         echo("</table>");
         }
 zadanie('SELECT * FROM pracownicy');
-  
-  
-?>
+function suma() 
+{
+  for($i=1;$i<10;$i++)
+  {
+    echo("10");
+  }
+   
+?>  
+ 

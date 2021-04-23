@@ -23,6 +23,7 @@
  require_once("assets/conn.php");
  $sql="Select * from autor, tytul, autor_tytul where autor.id=autor_id and tytul.id=tytul_id";
  $result=$conn->query($sql);
+ echo("<li>SQL:  $sql ");
  echo("<table border=1>");
  echo("<th>Nazwisko</th>");
  echo("<th>Tytul</th>");
@@ -33,7 +34,8 @@
  echo("</table>");
 
         $sql="Select * from autor";
-        $result=$conn->query($sql);     
+        $result=$conn->query($sql);  
+        echo("<li>SQL:  $sql ");   
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>Nazwisko</th>");
@@ -44,6 +46,7 @@
         echo("</table>"); 
  
         $sql="Select * from tytul";
+        echo("<li>SQL:  $sql ");
         $result=$conn->query($sql);      
         echo("<table border=1>");
         echo("<th>id</th>");
