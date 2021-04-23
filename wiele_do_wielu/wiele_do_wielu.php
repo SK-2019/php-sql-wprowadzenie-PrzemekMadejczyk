@@ -3,7 +3,7 @@
 <head>
 <from>
 
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="../assets/style.css">
 <link rel="icon" href="https://www.streamscheme.com/wp-content/uploads/2020/04/pepega.png" type="image/icon type">
   </from>
 </head>
@@ -20,7 +20,7 @@
     </div>
     <div class="main">
 <?php
- require_once("assets/conn.php");
+ require_once("../assets/conn.php");
  $sql="Select * from autor, tytul, autor_tytul where autor.id=autor_id and tytul.id=tytul_id";
  $result=$conn->query($sql);
  echo("<li>SQL:  $sql ");
