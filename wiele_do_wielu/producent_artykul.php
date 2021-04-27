@@ -18,7 +18,7 @@
     <div class="main">
 <?php
 require_once("../assets/conn.php");
-$sql=('SELECT * from producent, artykul, producent_artykul where producent.id=id_producent  and artykul.id=id_artykul');
+$sql=('SELECT * from producent, artykul, producent artykul where producent.id=id_producent  and artykul.id=id_artykul');
     $result=$conn->query($sql);
         echo("<hr />");
         echo("<li>SQL: $sql");
