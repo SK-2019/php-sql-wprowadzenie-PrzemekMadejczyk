@@ -45,18 +45,18 @@
             }
         echo("</table>"); 
 
-    //     $sql=('SELECT * from samochod');
-    // $result=$conn->query($sql);
-    //     echo("<hr />");
-    //     echo("<li>SQL: $sql");
-    //     echo("<table border=1>");
-    //     echo("<th>id</th>");
-    //     echo("<th>vin</th>");
-    //     echo("<th>model</th>");
-    //         while($row=$result->fetch_assoc()){
-    //             echo("<tr>");
-    //                 echo("<td>".$row['id']."</td><td>".$row['vin']."</td><td>".$row['model']."</td>");
-    //             echo("</tr>");
-    //         }
-    //     echo("</table>"); 
+        $sql=('SELECT * from samochod');
+    $result=$conn->query($sql);
+        echo("<hr />");
+        echo("<li>SQL: $sql");
+        echo("<table border=1>");
+        echo("<th>id</th>");
+        echo("<th>vin</th>");
+        echo("<th>model</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row['id']."</td><td>".$row['vin']."</td><td>".$row['model']."</td>");
+                echo("</tr>");
+            }
+        echo("</table>"); 
         ?>
