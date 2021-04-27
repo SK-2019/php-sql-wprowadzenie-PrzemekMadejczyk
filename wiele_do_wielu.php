@@ -9,14 +9,13 @@
 </head>
 </html>
 <div class="container">
-    <div class="header">
-        
-        <?php include("../header.php"); ?>
-    </div>
-    <div class="menu">
-    <?php include("../menu.php"); ?>
-    </div>
-    <div class="main">
+      <div class="header">
+        <?php include("header.php"); ?>
+      </div>
+      <div class="menu">
+      <?php include("menu.php"); ?>
+      </div>
+      <div class="main"></div>
 <?php
 echo('<h1>autor i ksiazki</h1>')
        require_once('../assets/conn.php');  
