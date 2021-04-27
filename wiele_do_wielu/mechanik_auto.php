@@ -23,10 +23,10 @@
         echo("<li>SQL: $sql");
         echo("<table border=1>");
         echo("<th>mechanik</th>");
-        echo("<th>model</th>");a
+        echo("<th>vin</th>");a
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['mechanik']."</td><td>".$row['model']."</td>");
+                    echo("<td>".$row['mechanik']."</td><td>".$row['vin']."</td>");
                 echo("</tr>");
             }
         echo("</table>"); 
@@ -55,7 +55,7 @@
         echo("<th>model</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['id']."</td><td>".$row['vin']."</td><td>".$row['model']."</td>");
+                    echo("<td>".$row['id']."</td><td>".$row['vin']."</td>");
                 echo("</tr>");
             }
         echo("</table>"); 
