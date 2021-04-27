@@ -17,7 +17,7 @@
 
     <?php
     require_once("../assets/conn.php");
-    $sql=('SELECT * from klasa, nauczyciel, klasa_nauczyciel where klasa.id=klasa_id and nauczyciel.id=nauczyciel_id');
+    $sql=('SELECT * from klasa, nauczyciel, klasa_nauczyciel where klasa.id=id_klasa and nauczyciel.id=id_nauczyciel');
         $result=$conn->query($sql);
             echo("<hr />");
             echo("<li>SQL: $sql");
