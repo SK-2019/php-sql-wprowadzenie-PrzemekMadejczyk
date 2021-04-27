@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<from>
+
 <link rel="stylesheet" href="../assets/style.css">
-<link rel="icon" href="https://www.pinclipart.com/picdir/middle/104-1042073_variety-of-services-money-bag-icon-png-clipart.png" type="image/icon type">
+<link rel="icon" href="https://www.streamscheme.com/wp-content/uploads/2020/04/pepega.png" type="image/icon type">
+  </from>
 </head>
-</html>
 <<div class="container">
     <div class="header">
         
@@ -14,3 +16,47 @@
     <?php include("../menu.php"); ?>
     </div>
     <div class="main">
+<?php
+require_once("../assets/conn.php");
+$sql=('SELECT * from pacjent, lekarz, lekarz_pacjent where pacjent.id=id_pacjent and lekarz.id=ID_lekarz');
+    $result=$conn->query($sql);
+        echo("<hr />");
+        echo("<li>SQL: $sql");
+        echo("<table border=1>");
+        echo("<th>pacjent</th>");
+        echo("<th>lekarz</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row['pacjent']."</td><td>".$row['lekarz']."</td>");
+                echo("</tr>");
+            }
+        echo("</table>"); 
+
+        $sql=('SELECT * from lekarz');
+    $result=$conn->query($sql);
+        echo("<hr />");
+        echo("<li>SQL: $sql");
+        echo("<table border=1>");
+        echo("<th>id</th>");
+        echo("<th>lekarz</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row['id']."</td><td>".$row['lekarz']."</td>");
+                echo("</tr>");
+            }
+        echo("</table>"); 
+
+        $sql=('SELECT * from pacjent');
+    $result=$conn->query($sql);
+        echo("<hr />");
+        echo("<li>SQL: $sql");
+        echo("<table border=1>");
+        echo("<th>id</th>");
+        echo("<th>pacjent</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row['id']."</td><td>".$row['pacjent']."</td>");
+                echo("</tr>");
+            }
+        echo("</table>"); 
+?>
