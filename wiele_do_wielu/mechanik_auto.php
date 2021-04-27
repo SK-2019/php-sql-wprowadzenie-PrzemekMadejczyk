@@ -53,7 +53,7 @@
         echo("<th>model</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['id']."</td><td>".$row['vin']."</td><td>".$row['model']."</td>"");
+                    echo("<td>".$row['id']."</td><td>".$row['vin']."</td><td>".$row['model']."</td>");
                 echo("</tr>");
             }
         echo("</table>"); 
