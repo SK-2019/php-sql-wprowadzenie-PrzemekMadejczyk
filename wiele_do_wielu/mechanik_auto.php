@@ -15,18 +15,18 @@
     </div>
     <div class="main">
     <?php
-    $sql=('SELECT * from mechanik, samochod, auto_mechanik where mechanik.id=id_mechanik and nauczyciel.id=id_samochod');
-    $result=$conn->query($sql);
-        echo("<hr />");
-        echo("<li>SQL: $sql");
-        echo("<table border=1>");
-        echo("<th>mechanik</th>");
-        echo("<th>model</th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>".$row['mechanik']."</td><td>".$row['model']."</td>");
-                echo("</tr>");
-            }
+    // $sql=('SELECT * from mechanik, samochod, auto_mechanik where mechanik.id=id_mechanik and nauczyciel.id=id_samochod');
+    // $result=$conn->query($sql);
+    //     echo("<hr />");
+    //     echo("<li>SQL: $sql");
+    //     echo("<table border=1>");
+    //     echo("<th>mechanik</th>");
+    //     echo("<th>model</th>");a
+    //         while($row=$result->fetch_assoc()){
+    //             echo("<tr>");
+    //                 echo("<td>".$row['mechanik']."</td><td>".$row['model']."</td>");
+    //             echo("</tr>");
+    //         }
         echo("</table>"); 
 
             $sql=('SELECT * from mechanik');
