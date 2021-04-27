@@ -27,7 +27,7 @@ $sql=('SELECT * from mechanik, samochod, samochod_mechanik where mechanik.id=id_
         echo("<th>vin</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['klasa']."</td><td>".$row['vin']."</td>");
+                    echo("<td>".$row['mechanik']."</td><td>".$row['vin']."</td>");
                 echo("</tr>");
             }
         echo("</table>"); 
