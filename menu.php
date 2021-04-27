@@ -9,7 +9,7 @@
      <a class ="nav_link"  href="/pracownicy/daneDoBazy.php">dane do bazy danych</a>
      <a class ="nav_link"  href="/ksiazki/ksiazki.php">Książki</a>
      <a class ="nav_link"  href="/flexbox/flexbox.html">Flexbox</a>
-     <a class ="nav_link"  href="/wiele_do_wielu/wiele_do_wielu.php">autor_tytul</a>
+     <a class ="nav_link"  href="/wiele_do_wielu/wiele_do_wielu.php">Pracownicy - wstęp</a>
      <a class ="nav_link"  href="/wiele_do_wielu/lekarz_pacjent.php">lekarz_pacjent</a>
      <a class ="nav_link"  href="/wiele_do_wielu/mechanik_auto.php">mechanik_auto</a>
      <a class ="nav_link"  href="/wiele_do_wielu/nauczyciel_klasa">nauczyciel_klasa</a>
