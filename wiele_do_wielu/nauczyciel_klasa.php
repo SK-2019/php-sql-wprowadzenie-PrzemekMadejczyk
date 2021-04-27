@@ -18,16 +18,16 @@
     <div class="main">
 <?php
 require_once("../assets/conn.php");
-$sql=('SELECT * from autor, tytul, autor_tytul where autor.id=autor_id and tytul.id=tytul_id');
+$sql=('SELECT * from klasa, nauczyciel, klasa_nauczyciel where klasa.id=id_klasa and nauczyciel.id=id_nauczyciel');
     $result=$conn->query($sql);
         echo("<hr />");
         echo("<li>SQL: $sql");
         echo("<table border=1>");
-        echo("<th>nazwisko</th>");
-        echo("<th>tytul</th>");
+        echo("<th>klasa</th>");
+        echo("<th>nauczyciel</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['nazwisko']."</td><td>".$row['tytul']."</td>");
+                    echo("<td>".$row['klasa']."</td><td>".$row['nauczyciel']."</td>");
                 echo("</tr>");
             }
         echo("</table>"); 
