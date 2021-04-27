@@ -17,29 +17,46 @@
 
     <?php
     require_once("../assets/conn.php");
-     $sql="Select * from klasa";
-     $result=$conn->query($sql);  
-     echo("<li>SQL:  $sql ");   
-     echo("<table border=1>");
-     echo("<th>id</th>");
-     echo("<th>Nazwisko</th>");
-             while($row=$result->fetch_assoc())
-             {
-                 echo("<tr>");
-                     echo("<td>".$row["id"]."</td><td>".$row["klasa"]."</td>");
-                 echo("</tr>");
+    $sql=('SELECT * from klasa, nauczyciel, klasa_nauczyciel where klasa.id=klasa_id and nauczyciel.id=nauczyciel_id');
+        $result=$conn->query($sql);
+            echo("<hr />");
+            echo("<li>SQL: $sql");
+            echo("<table border=1>");
+            echo("<th>nazwisko</th>");
+            echo("<th>tytul</th>");
+                while($row=$result->fetch_assoc()){
+                    echo("<tr>");
+                        echo("<td>".$row['nazwisko']."</td><td>".$row['tytul']."</td>");
+                    echo("</tr>");
                 }
-     echo("</table>"); 
+            echo("</table>");
 
-     $sql="Select * from nauczyciel";
-     echo("<li>SQL:  $sql ");
-     $result=$conn->query($sql);      
-     echo("<table border=1>");
-     echo("<th>id</th>");
-     echo("<th>Tytul</th>");
-             while($row=$result->fetch_assoc()){
-                 echo("<tr>");
-                     echo("<td>".$row["id"]."</td><td>".$row["tytul"]."</td>");
-                 echo("</tr>");}
-     echo("</table>"); 
+            $sql=('SELECT * from klasa');
+    $result=$conn->query($sql);
+        echo("<hr />");
+        echo("<li>SQL: $sql");
+        echo("<table border=1>");
+        echo("<th>id</th>");
+        echo("<th>klasa</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row['id']."</td><td>".$row['klasa']."</td>");
+                echo("</tr>");
+            }
+        echo("</table>"); 
+
+        $sql=('SELECT * from nauczyciel');
+    $result=$conn->query($sql);
+        echo("<hr />");
+        echo("<li>SQL: $sql");
+        echo("<table border=1>");
+        echo("<th>id</th>");
+        echo("<th>nauczyciel</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row['id']."</td><td>".$row['nauczyciel']."</td>");
+                echo("</tr>");
+            }
+        echo("</table>"); 
+
         ?>
