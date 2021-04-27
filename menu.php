@@ -11,7 +11,7 @@
      <a class ="nav_link"  href="/cwiczenia/flexbox.html">Flexbox</a>
      <a class ="nav_link"  href="../wiele_do_wielu/wiele_do_wielu.php">autor_tytul</a>
      <a class ="nav_link"  href="/wiele_do_wielu/lekarz_pacjent.php">lekarz_pacjent</a>
-     <a class ="nav_link"  href="/wiele_do_wielu/mechanik_auto.php">mechanik_auto</a>
+     <a class ="nav_link"  href="../wiele_do_wielu/mechanik_auto.php">mechanik_auto</a>
      <a class ="nav_link"  href="../wiele_do_wielu/nauczyciel_klasa.php">nauczyciel_klasa</a>
      <a class ="nav_link"  href="https://www.notion.so/SQL-3ccfadeab4b84d7794d7a13966de2547">Notion </a>
     </ul>
