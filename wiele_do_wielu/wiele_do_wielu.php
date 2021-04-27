@@ -7,15 +7,15 @@
 <link rel="icon" href="https://www.streamscheme.com/wp-content/uploads/2020/04/pepega.png" type="image/icon type">
   </from>
 </head>
-</html>
-<div class="container">
-      <div class="header">
-        <?php include("header.php"); ?>
-      </div>
-      <div class="menu">
-      <?php include("menu.php"); ?>
-      </div>
-      <div class="main"></div>
+<<div class="container">
+    <div class="header">
+        
+        <?php include("../header.php"); ?>
+    </div>
+    <div class="menu">
+    <?php include("../menu.php"); ?>
+    </div>
+    <div class="main">
 <?php
 echo('<h1>autor i ksiazki</h1>')
        require_once('../assets/conn.php');  
