@@ -21,17 +21,19 @@
     <div class="main">
 <?php
 echo('<h1>autor i ksiazki</h1>')
- require_once("../assets/conn.php");`
+ require_once("../assets/conn.php");
  $sql="Select * from autor, tytul, autor_tytul where autor.id=autor_id and tytul.id=tytul_id";
  $result=$conn->query($sql);
  echo("<li>SQL:  $sql ");
  echo("<table border=1>");
  echo("<th>Nazwisko</th>");
  echo("<th>Tytul</th>");
-         while($row=$result->fetch_assoc()){
+         while($row=$result->fetch_assoc())
+         {
              echo("<tr>");
                  echo("<td>".$row["nazwisko"]."</td><td>".$row["tytul"]."</td>");
-             echo("</tr>");}
+             echo("</tr>");
+            }
  echo("</table>");
 
         $sql="Select * from autor";
