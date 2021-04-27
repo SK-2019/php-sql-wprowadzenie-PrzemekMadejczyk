@@ -7,9 +7,7 @@
 <link rel="icon" href="https://www.streamscheme.com/wp-content/uploads/2020/04/pepega.png" type="image/icon type">
   </from>
 </head>
-  
-<body>
-
+</html>
 <div class="container">
     <div class="header">
         
