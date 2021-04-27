@@ -17,16 +17,17 @@
     </div>
     <div class="main">
 <?php
-    $sql=('SELECT * from mechanik, samochod, mechanik_samochod where mechanik.id=id_mechanik and samochod.id=id_samochod');
+require_once("../assets/conn.php");
+$sql=('SELECT * from mechanik, samochod, samochod_mechanik where mechanik.id=id_mechanik and samochod.id=id_samochod');
     $result=$conn->query($sql);
         echo("<hr />");
         echo("<li>SQL: $sql");
         echo("<table border=1>");
         echo("<th>mechanik</th>");
-        echo("<th>vin</th>");a
+        echo("<th>vin</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['mechanik']."</td><td>".$row['vin']."</td>");
+                    echo("<td>".$row['klasa']."</td><td>".$row['vin']."</td>");
                 echo("</tr>");
             }
         echo("</table>"); 
@@ -51,12 +52,10 @@
         echo("<li>SQL: $sql");
         echo("<table border=1>");
         echo("<th>id</th>");
-        echo("<th>vin</th>");
-        echo("<th>model</th>");
+        echo("<th>samochod</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['id']."</td><td>".$row['vin']."</td>");
+                    echo("<td>".$row['id']."</td><td>".$row['samochod']."</td>");
                 echo("</tr>");
             }
         echo("</table>"); 
-        ?>
