@@ -27,7 +27,7 @@
     //                 echo("<td>".$row['mechanik']."</td><td>".$row['model']."</td>");
     //             echo("</tr>");
     //         }
-        echo("</table>"); 
+        //echo("</table>"); 
 
             $sql=('SELECT * from mechanik');
     $result=$conn->query($sql);
