@@ -22,11 +22,11 @@
             echo("<hr />");
             echo("<li>SQL: $sql");
             echo("<table border=1>");
-            echo("<th>nazwisko</th>");
-            echo("<th>tytul</th>");
+            echo("<th>klasa</th>");
+            echo("<th>nauczyciel</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
-                        echo("<td>".$row['nazwisko']."</td><td>".$row['tytul']."</td>");
+                        echo("<td>".$row['klasa']."</td><td>".$row['nauczyciel']."</td>");
                     echo("</tr>");
                 }
             echo("</table>");
