@@ -16,6 +16,7 @@
     <div class="main">
 
     <?php
+    require_once("../assets/conn.php");
      $sql="Select * from klasa";
      $result=$conn->query($sql);  
      echo("<li>SQL:  $sql ");   
