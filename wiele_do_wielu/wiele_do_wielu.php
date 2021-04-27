@@ -45,4 +45,18 @@ $sql=('SELECT * from autor, tytul, autor_tytul where autor.id=autor_id and tytul
                 echo("</tr>");
             }
         echo("</table>"); 
+
+        $sql=('SELECT * from tytul');
+    $result=$conn->query($sql);
+        echo("<hr />");
+        echo("<li>SQL: $sql");
+        echo("<table border=1>");
+        echo("<th>id</th>");
+        echo("<th>tytul</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row['id']."</td><td>".$row['tytul']."</td>");
+                echo("</tr>");
+            }
+        echo("</table>"); 
 ?>
