@@ -52,10 +52,10 @@ $sql=('SELECT * from mechanik, samochod, samochod_mechanik where mechanik.id=id_
         echo("<li>SQL: $sql");
         echo("<table border=1>");
         echo("<th>id</th>");
-        echo("<th>samochod</th>");
+        echo("<th>vin</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['id']."</td><td>".$row['samochod']."</td>");
+                    echo("<td>".$row['id']."</td><td>".$row['vin']."</td>");
                 echo("</tr>");
             }
         echo("</table>"); 
