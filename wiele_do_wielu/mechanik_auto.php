@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<from>
+
 <link rel="stylesheet" href="../assets/style.css">
-<link rel="icon" href="https://www.pinclipart.com/picdir/middle/104-1042073_variety-of-services-money-bag-icon-png-clipart.png" type="image/icon type">
+<link rel="icon" href="https://www.streamscheme.com/wp-content/uploads/2020/04/pepega.png" type="image/icon type">
+  </from>
 </head>
-</html>
-<<div class="container">
+<div class="container">
     <div class="header">
         
         <?php include("../header.php"); ?>
@@ -14,7 +16,7 @@
     <?php include("../menu.php"); ?>
     </div>
     <div class="main">
-    <?php
+<?php
     $sql=('SELECT * from mechanik, samochod, mechanik_samochod where mechanik.id=id_mechanik and samochod.id=id_samochod');
     $result=$conn->query($sql);
         echo("<hr />");
