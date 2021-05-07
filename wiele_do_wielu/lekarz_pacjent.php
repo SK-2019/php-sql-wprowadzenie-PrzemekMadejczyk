@@ -19,7 +19,7 @@
 <?php
 function formularz()
 {
-            echo ("<form action='delete1.php' method='POST'>");
+            echo ("<form action='delete11.php' method='POST'>");
             echo("<input type='number' name='row' value='".$wiersz[$dana3]."' hidden>");
             echo("<input type='text' name='table' value='".$table."' hidden>");
             echo("<input type='text' name='column' value='".$columnid."' hidden>");
@@ -39,7 +39,7 @@ $sql=('SELECT * from pacjent, lekarz, lekarz_pacjent where pacjent.id=id_pacjent
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                     echo("<td>".$row['id']."</td><td>".$row['pacjent']."</td><td>".$row['lekarz']."</td><td>
-                    <form action='delete.php' method='POST'>
+                    <form action='delete1.php' method='POST'>
                     <input type='number' name='row' value='".$row['id']."' hidden>
                     <input type='text' name='table' value='lekarz_pacjent' hidden>
                     <input type='text' name='column' value='id' hidden>
@@ -60,7 +60,7 @@ $sql=('SELECT * from pacjent, lekarz, lekarz_pacjent where pacjent.id=id_pacjent
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                     echo("<td>".$row['id']."</td><td>".$row['lekarz']."</td><td>
-                    <form action='delete.php' method='POST'>
+                    <form action='delete1.php' method='POST'>
                     <input type='number' name='row' value='".$row['id']."' hidden>
                     <input type='text' name='table' value='lekarz' hidden>
                     <input type='text' name='column' value='id' hidden>
@@ -80,7 +80,7 @@ $sql=('SELECT * from pacjent, lekarz, lekarz_pacjent where pacjent.id=id_pacjent
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                     echo("<td>".$row['id']."</td><td>".$row['pacjent']."</td><td>
-                    <form action='delete.php' method='POST'>
+                    <form action='delete1.php' method='POST'>
                     <input type='number' name='row' value='".$row['id']."' hidden>
                     <input type='text' name='table' value='pacjent' hidden>
                     <input type='text' name='column' value='id' hidden>

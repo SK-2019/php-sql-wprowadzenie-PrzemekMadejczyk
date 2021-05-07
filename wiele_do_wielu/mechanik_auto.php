@@ -29,7 +29,7 @@ $sql=('SELECT * from mechanik, samochod, samochod_mechanik where mechanik.id=id_
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                     echo("<td>".$row['id']."</td><td>".$row['mechanik']."</td><td>".$row['vin']."</td><td>
-                    <form action='delete.php' method='POST'>
+                    <form action='delete1.php' method='POST'>
                     <input type='number' name='row' value='".$row['id']."' hidden>
                     <input type='text' name='table' value='samochod_mechanik' hidden>
                     <input type='text' name='column' value='id' hidden>
@@ -49,7 +49,7 @@ $sql=('SELECT * from mechanik, samochod, samochod_mechanik where mechanik.id=id_
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                     echo("<td>".$row['id']."</td><td>".$row['mechanik']."</td><td>
-                    <form action='delete.php' method='POST'>
+                    <form action='delete1.php' method='POST'>
                     <input type='number' name='row' value='".$row['id']."' hidden>
                     <input type='text' name='table' value='mechanik' hidden>
                     <input type='text' name='column' value='id' hidden>
@@ -69,7 +69,7 @@ $sql=('SELECT * from mechanik, samochod, samochod_mechanik where mechanik.id=id_
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                     echo("<td>".$row['id']."</td><td>".$row['vin']."</td><td>
-                    <form action='delete.php' method='POST'>
+                    <form action='delete1.php' method='POST'>
                     <input type='number' name='row' value='".$row['id']."' hidden>
                     <input type='text' name='table' value='samochod' hidden>
                     <input type='text' name='column' value='id' hidden>
