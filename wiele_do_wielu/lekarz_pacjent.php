@@ -17,6 +17,16 @@
     </div>
     <div class="main">
 <?php
+function formularz()
+{
+            echo ("<form action='delete1.php' method='POST'>");
+            echo("<input type='number' name='row' value='".$wiersz[$dana3]."' hidden>");
+            echo("<input type='text' name='table' value='".$table."' hidden>");
+            echo("<input type='text' name='column' value='".$columnid."' hidden>");
+            echo("<input type='submit' value='Usuń'>");
+            echo("</form>");
+}
+
 require_once("../assets/conn.php");
 $sql=('SELECT * from pacjent, lekarz, lekarz_pacjent where pacjent.id=id_pacjent and lekarz.id=ID_lekarz');
     $result=$conn->query($sql);
@@ -31,6 +41,7 @@ $sql=('SELECT * from pacjent, lekarz, lekarz_pacjent where pacjent.id=id_pacjent
                 echo("</tr>");
             }
         echo("</table>"); 
+
 
         $sql=('SELECT * from lekarz');
     $result=$conn->query($sql);
