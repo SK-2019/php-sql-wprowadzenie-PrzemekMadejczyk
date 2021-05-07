@@ -23,11 +23,12 @@ $sql=('SELECT * from autor, tytul, autor_tytul where autor.id=autor_id and tytul
         echo("<hr />");
         echo("<li>SQL: $sql");
         echo("<table border=1>");
+        echo("<th>id</th>");
         echo("<th>nazwisko</th>");
         echo("<th>tytul</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['nazwisko']."</td><td>".$row['tytul']."</td><td>
+                    echo("<td>".$row['id']"</td><td>".$row['nazwisko']."</td><td>".$row['tytul']."</td><td>
                     <form action='delete.php' method='POST'>
                     <input type='number' name='row' value='".$wiersz[$dana3]."' hidden>
                     <input type='text' name='table' value='".$table."' hidden>

@@ -33,11 +33,12 @@ $sql=('SELECT * from pacjent, lekarz, lekarz_pacjent where pacjent.id=id_pacjent
         echo("<hr />");
         echo("<li>SQL: $sql");
         echo("<table border=1>");
+        echo("<th>id</th>");
         echo("<th>pacjent</th>");
         echo("<th>lekarz</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['pacjent']."</td><td>".$row['lekarz']."</td><td>
+                    echo("<td>".$row['id']"</td><td>".$row['pacjent']."</td><td>".$row['lekarz']."</td><td>
                     <form action='delete.php' method='POST'>
                     <input type='number' name='row' value='".$wiersz[$dana3]."' hidden>
                     <input type='text' name='table' value='".$table."' hidden>
