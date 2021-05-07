@@ -58,7 +58,13 @@ $sql=('SELECT * from pacjent, lekarz, lekarz_pacjent where pacjent.id=id_pacjent
         echo("<th>lekarz</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['id']."</td><td>".$row['lekarz']."</td>");
+                    echo("<td>".$row['id']."</td><td>".$row['lekarz']."</td><td>
+                    <form action='delete.php' method='POST'>
+                    <input type='number' name='row' value='".$wiersz[$dana3]."' hidden>
+                    <input type='text' name='table' value='".$table."' hidden>
+                    <input type='text' name='column' value='".$columnid."' hidden>
+                    <input type='submit' value='Usuń'>
+                    </form>");
                 echo("</tr>");
             }
         echo("</table>"); 
@@ -72,7 +78,13 @@ $sql=('SELECT * from pacjent, lekarz, lekarz_pacjent where pacjent.id=id_pacjent
         echo("<th>pacjent</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['id']."</td><td>".$row['pacjent']."</td>");
+                    echo("<td>".$row['id']."</td><td>".$row['pacjent']."</td><td>
+                    <form action='delete.php' method='POST'>
+                    <input type='number' name='row' value='".$wiersz[$dana3]."' hidden>
+                    <input type='text' name='table' value='".$table."' hidden>
+                    <input type='text' name='column' value='".$columnid."' hidden>
+                    <input type='submit' value='Usuń'>
+                    </form>");
                 echo("</tr>");
             }
         echo("</table>"); 
