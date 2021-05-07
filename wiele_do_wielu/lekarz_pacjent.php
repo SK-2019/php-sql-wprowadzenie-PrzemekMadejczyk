@@ -37,7 +37,13 @@ $sql=('SELECT * from pacjent, lekarz, lekarz_pacjent where pacjent.id=id_pacjent
         echo("<th>lekarz</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['pacjent']."</td><td>".$row['lekarz']."</td><td>".formularz()."</td>");
+                    echo("<td>".$row['pacjent']."</td><td>".$row['lekarz']."</td><td>
+                    <form action='delete.php' method='POST'>
+                    <input type='number' name='row' value='".$wiersz[$dana3]."' hidden>
+                    <input type='text' name='table' value='".$table."' hidden>
+                    <input type='text' name='column' value='".$columnid."' hidden>
+                    <input type='submit' value='Usuń'>
+                    </form></td>");
                 echo("</tr>");
             }
         echo("</table>"); 
