@@ -30,9 +30,9 @@ $sql=('SELECT * from producent, artykul, producent_artykul where producent.id=id
                 echo("<tr>");
                     echo("<td>".$row['id']."</td><td>".$row['producent']."</td><td>".$row['artykul']."</td><td>
                     <form action='delete.php' method='POST'>
-                    <input type='number' name='row' value='".$wiersz[$dana3]."' hidden>
-                    <input type='text' name='table' value='".$table."' hidden>
-                    <input type='text' name='column' value='".$columnid."' hidden>
+                    <input type='number' name='row' value='".$row['id']."' hidden>
+                    <input type='text' name='table' value='producent_artykul' hidden>
+                    <input type='text' name='column' value='id' hidden>
                     <input type='submit' value='Usuń'>
                     </form>");
                 echo("</tr>");
@@ -50,9 +50,9 @@ $sql=('SELECT * from producent, artykul, producent_artykul where producent.id=id
                 echo("<tr>");
                     echo("<td>".$row['id']."</td><td>".$row['producent']."</td><td>
                     <form action='delete.php' method='POST'>
-                    <input type='number' name='row' value='".$wiersz[$dana3]."' hidden>
-                    <input type='text' name='table' value='".$table."' hidden>
-                    <input type='text' name='column' value='".$columnid."' hidden>
+                    <input type='number' name='row' value='".$row['id']."' hidden>
+                    <input type='text' name='table' value='producent' hidden>
+                    <input type='text' name='column' value='id' hidden>
                     <input type='submit' value='Usuń'>
                     </form>");
                 echo("</tr>");
@@ -70,9 +70,9 @@ $sql=('SELECT * from producent, artykul, producent_artykul where producent.id=id
                 echo("<tr>");
                     echo("<td>".$row['id']."</td><td>".$row['artykul']."</td><td>
                     <form action='delete.php' method='POST'>
-                    <input type='number' name='row' value='".$wiersz[$dana3]."' hidden>
-                    <input type='text' name='table' value='".$table."' hidden>
-                    <input type='text' name='column' value='".$columnid."' hidden>
+                    <input type='number' name='row' value='".$row['id']."' hidden>
+                    <input type='text' name='table' value='artykul' hidden>
+                    <input type='text' name='column' value='id' hidden>
                     <input type='submit' value='Usuń'>
                     </form>");
                 echo("</tr>");

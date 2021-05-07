@@ -30,9 +30,9 @@ $sql=('SELECT * from mechanik, samochod, samochod_mechanik where mechanik.id=id_
                 echo("<tr>");
                     echo("<td>".$row['id']."</td><td>".$row['mechanik']."</td><td>".$row['vin']."</td><td>
                     <form action='delete.php' method='POST'>
-                    <input type='number' name='row' value='".$wiersz[$dana3]."' hidden>
-                    <input type='text' name='table' value='".$table."' hidden>
-                    <input type='text' name='column' value='".$columnid."' hidden>
+                    <input type='number' name='row' value='".$row['id']."' hidden>
+                    <input type='text' name='table' value='samochod_mechanik' hidden>
+                    <input type='text' name='column' value='id' hidden>
                     <input type='submit' value='Usuń'>
                     </form>");
                 echo("</tr>");
@@ -50,9 +50,9 @@ $sql=('SELECT * from mechanik, samochod, samochod_mechanik where mechanik.id=id_
                 echo("<tr>");
                     echo("<td>".$row['id']."</td><td>".$row['mechanik']."</td><td>
                     <form action='delete.php' method='POST'>
-                    <input type='number' name='row' value='".$wiersz[$dana3]."' hidden>
-                    <input type='text' name='table' value='".$table."' hidden>
-                    <input type='text' name='column' value='".$columnid."' hidden>
+                    <input type='number' name='row' value='".$row['id']."' hidden>
+                    <input type='text' name='table' value='mechanik' hidden>
+                    <input type='text' name='column' value='id' hidden>
                     <input type='submit' value='Usuń'>
                     </form>");
                 echo("</tr>");
@@ -70,9 +70,9 @@ $sql=('SELECT * from mechanik, samochod, samochod_mechanik where mechanik.id=id_
                 echo("<tr>");
                     echo("<td>".$row['id']."</td><td>".$row['vin']."</td><td>
                     <form action='delete.php' method='POST'>
-                    <input type='number' name='row' value='".$wiersz[$dana3]."' hidden>
-                    <input type='text' name='table' value='".$table."' hidden>
-                    <input type='text' name='column' value='".$columnid."' hidden>
+                    <input type='number' name='row' value='".$row['id']."' hidden>
+                    <input type='text' name='table' value='samochod' hidden>
+                    <input type='text' name='column' value='id' hidden>
                     <input type='submit' value='Usuń'>
                     </form>");
                 echo("</tr>");
