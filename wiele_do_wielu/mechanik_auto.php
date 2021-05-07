@@ -28,7 +28,7 @@ $sql=('SELECT * from mechanik, samochod, samochod_mechanik where mechanik.id=id_
         echo("<th>vin</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['id']"</td><td>".$row['mechanik']."</td><td>".$row['vin']."</td><td>
+                    echo("<td>".$row['id']."</td><td>".$row['mechanik']."</td><td>".$row['vin']."</td><td>
                     <form action='delete.php' method='POST'>
                     <input type='number' name='row' value='".$wiersz[$dana3]."' hidden>
                     <input type='text' name='table' value='".$table."' hidden>
