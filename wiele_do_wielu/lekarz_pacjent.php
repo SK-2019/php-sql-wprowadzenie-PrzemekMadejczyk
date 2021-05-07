@@ -37,7 +37,7 @@ $sql=('SELECT * from pacjent, lekarz, lekarz_pacjent where pacjent.id=id_pacjent
         echo("<th>lekarz</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['pacjent']."</td><td>".$row['lekarz']."</td><td>".$row[formularz();]."</td>");
+                    echo("<td>".$row['pacjent']."</td><td>".$row['lekarz']."</td><td>".formularz();."</td>");
                 echo("</tr>");
             }
         echo("</table>"); 
